@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "name": "Mountain Treks",
+    "image": "https://i.ibb.co.com/f44Bkgd/Mountain-Treks.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Forest Expeditions",
+    "image": "https://i.ibb.co.com/Bt9Z6kq/Forest-Expeditions.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Camping Retreats",
+    "image": "https://i.ibb.co.com/HVDMTmD/Camping-Retreats.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Mangrove Forest Expeditions",
+    "image": "https://i.ibb.co.com/crwTnTp/Mangrove-Forest-Expeditions.jpg"
+  },
+  {
+    "id": 5,
+    "name": "River Adventures",
+    "image": "https://i.ibb.co.com/9wTv11b/River-Adventures.jpg"
+  }
+]

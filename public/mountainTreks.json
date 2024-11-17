@@ -1,0 +1,218 @@
+[
+  {
+    "id": 1,
+    "adventureTitle": "Himalayan Bliss Trek",
+    "image": "https://i.ibb.co.com/BKsPZDR/Himalayan-Bliss-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Experience the serene beauty of the Himalayas with this breathtaking trek.",
+    "adventureCost": 1200,
+    "bookingAvailability": "Available",
+    "location": "Himalayas, Nepal",
+    "duration": "10 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guide", "Meals", "Camping Gear", "First Aid Kit"],
+    "ecoFriendlyFeatures": [
+      "Minimal waste policy",
+      "Solar-powered camps",
+      "Local guides"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry thermal wear for cold nights.",
+      "Ensure good physical fitness before the trek.",
+      "Avoid single-use plastics."
+    ]
+  },
+  {
+    "id": 2,
+    "adventureTitle": "Rocky Peaks Adventure",
+    "image": "https://i.ibb.co.com/znFSSVC/Rocky-Peaks-Adventure.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A challenging trek to the highest peaks of the Rocky Mountains.",
+    "adventureCost": 800,
+    "bookingAvailability": "Limited",
+    "location": "Rocky Mountains, USA",
+    "duration": "7 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camping Equipment", "Meals", "Guided Tours"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly campsites",
+      "Reusable utensils",
+      "Local produce meals"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear sturdy trekking boots.",
+      "Pack light but include essentials like water bottles and sunscreen.",
+      "Avoid picking plants or disturbing wildlife."
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Swiss Alps Serenity",
+    "image": "https://i.ibb.co.com/QfpJDSD/Swiss-Alps-Serenity.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Discover the tranquility of the Swiss Alps with this serene trek.",
+    "adventureCost": 1000,
+    "bookingAvailability": "Available",
+    "location": "Swiss Alps, Switzerland",
+    "duration": "5 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Meals", "Basic Gear", "Local Guide"],
+    "ecoFriendlyFeatures": [
+      "Electric vehicle transfers",
+      "No-trace trekking",
+      "Locally sourced meals"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry lightweight rain gear.",
+      "Respect local customs and traditions.",
+      "Do not litter; use waste disposal facilities."
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "https://i.ibb.co.com/SnXx6Zn/Andes-Trail-Challenge.jpg",
+    "image": "https://example.com/images/andes_trail.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Embark on a thrilling trek through the Andes Mountains.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Andes, South America",
+    "duration": "12 Days",
+    "adventureLevel": "Expert",
+    "includedItems": ["Trekking Gear", "Meals", "Emergency Support"],
+    "ecoFriendlyFeatures": [
+      "Organic meals",
+      "Sustainable trail maintenance",
+      "Water refill stations"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Acclimatize to altitude before the trek.",
+      "Carry a reusable water bottle.",
+      "Follow the guide's instructions strictly."
+    ]
+  },
+  {
+    "id": 5,
+    "adventureTitle": "Kilimanjaro Summit Trek",
+    "image": "https://i.ibb.co.com/hMjXDMB/Kilimanjaro-Summit-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Conquer the iconic Kilimanjaro with this thrilling expedition.",
+    "adventureCost": 1400,
+    "bookingAvailability": "Available",
+    "location": "Mount Kilimanjaro, Tanzania",
+    "duration": "8 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guides", "Meals", "Camping Equipment"],
+    "ecoFriendlyFeatures": [
+      "Minimal impact routes",
+      "Eco-friendly waste disposal",
+      "Local staff employment"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry altitude sickness medication.",
+      "Pack layered clothing for extreme weather changes.",
+      "Stay hydrated throughout the trek."
+    ]
+  },
+  {
+    "id": 6,
+    "adventureTitle": "Annapurna Circuit Trek",
+    "image": "https://i.ibb.co.com/GJwxWPq/Annapurna-Circuit-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Explore the breathtaking Annapurna region with this all-time favorite trek.",
+    "adventureCost": 1300,
+    "bookingAvailability": "Available",
+    "location": "Annapurna, Nepal",
+    "duration": "15 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Meals", "Lodging", "Local Guides"],
+    "ecoFriendlyFeatures": [
+      "Composting toilets",
+      "Reusable energy resources",
+      "Organic meals"
+    ],
+    "maxGroupSize": 14,
+    "specialInstructions": [
+      "Wear appropriate trekking shoes.",
+      "Ensure travel insurance covers high-altitude trekking.",
+      "Avoid bringing unnecessary packaging materials."
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Patagonia Wilderness Trek",
+    "image": "https://i.ibb.co.com/51WxYM1/Patagonia-Wilderness-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Venture into the wild beauty of Patagonia on this epic trek.",
+    "adventureCost": 1100,
+    "bookingAvailability": "Limited",
+    "location": "Patagonia, Chile/Argentina",
+    "duration": "9 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camping Supplies", "Meals", "Professional Guides"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered camps",
+      "Leave-no-trace policy",
+      "Organic meals"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry waterproof gear for unexpected rains.",
+      "Respect wildlife and maintain a safe distance.",
+      "Bring a small backpack for daily essentials."
+    ]
+  },
+  {
+    "id": 8,
+    "adventureTitle": "Mt. Fuji Sunrise Trek",
+    "image": "https://i.ibb.co.com/PNxt0kq/Mt-Fuji-Sunrise-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Climb Mt. Fuji and witness a spectacular sunrise at the summit.",
+    "adventureCost": 900,
+    "bookingAvailability": "Available",
+    "location": "Mount Fuji, Japan",
+    "duration": "2 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Snacks", "Safety Gear"],
+    "ecoFriendlyFeatures": [
+      "Zero waste trek",
+      "Reusable water bottles",
+      "Local materials for camps"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Start early to avoid crowds.",
+      "Carry flashlights for the pre-dawn ascent.",
+      "Respect cultural norms and practices at the summit."
+    ]
+  },
+  {
+    "id": 9,
+    "adventureTitle": "Alpine Meadows Exploration",
+    "image": "https://i.ibb.co.com/6D0n2fh/Alpine-Meadows-Exploration.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Enjoy the scenic alpine meadows with this relaxing trek.",
+    "adventureCost": 700,
+    "bookingAvailability": "Available",
+    "location": "Alps, Europe",
+    "duration": "6 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Lodging", "Meals"],
+    "ecoFriendlyFeatures": [
+      "Local organic meals",
+      "Sustainable trails",
+      "Zero single-use plastic policy"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry lightweight gear for easy movement.",
+      "Capture memories but avoid disturbing wildlife.",
+      "Respect trail guidelines to maintain its pristine nature."
+    ]
+  }
+]
