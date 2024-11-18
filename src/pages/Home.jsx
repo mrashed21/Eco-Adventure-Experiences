@@ -1,3 +1,4 @@
+import { Outlet } from "react-router-dom";
 import Banner from "../components/Banner";
 import CategoriesContainer from "../components/CategoriesContainer";
 import Footer from "../components/Footer";
@@ -15,6 +16,7 @@ const Home = () => {
         <Banner />
 
         <CategoriesContainer />
+        <Outlet></Outlet>
       </main>
       <footer>
         <Footer />

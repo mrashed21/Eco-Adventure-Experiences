@@ -24,99 +24,147 @@
     ]
   },
   {
-    "id": 2,
-    "adventureTitle": "Rocky Peaks Adventure",
-    "image": "https://i.ibb.co.com/znFSSVC/Rocky-Peaks-Adventure.jpg",
-    "categoryName": "Mountain Treks",
-    "shortDescription": "A challenging trek to the highest peaks of the Rocky Mountains.",
-    "adventureCost": 800,
-    "bookingAvailability": "Limited",
-    "location": "Rocky Mountains, USA",
+    "id": 10,
+    "adventureTitle": "Amazon Rainforest Exploration",
+    "image": "https://i.ibb.co.com/yXDRbSg/Amazon-Rainforest-Exploration.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Discover the dense Amazon rainforest with local guides.",
+    "adventureCost": 2500,
+    "bookingAvailability": "Available",
+    "location": "Amazon Basin, South America",
     "duration": "7 Days",
     "adventureLevel": "Intermediate",
-    "includedItems": ["Camping Equipment", "Meals", "Guided Tours"],
+    "includedItems": ["Guide", "Meals", "Camping gear", "First Aid"],
     "ecoFriendlyFeatures": [
-      "Eco-friendly campsites",
-      "Reusable utensils",
-      "Local produce meals"
+      "Support for local communities",
+      "Biodegradable utensils",
+      "Conservation efforts"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring insect repellent",
+      "Wear waterproof clothing",
+      "Respect wildlife"
+    ]
+  },
+  {
+    "id": 20,
+    "adventureTitle": "Lake District Camping Getaway",
+    "image": "https://i.ibb.co.com/KyWChdK/Lake-District-Camping-Getaway.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Relax by the serene lakes and lush meadows of the Lake District.",
+    "adventureCost": 1200,
+    "bookingAvailability": "Available",
+    "location": "Cumbria, England",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Camping gear", "Meals", "Safety gear", "First aid"],
+    "ecoFriendlyFeatures": [
+      "Compost toilets",
+      "Reusable water bottles",
+      "No single-use plastics"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Pack waterproof clothing",
+      "Respect wildlife",
+      "Follow campsite rules"
+    ]
+  },
+  {
+    "id": 28,
+    "adventureTitle": "Sundarbans Mangrove Exploration",
+    "image": "https://i.ibb.co.com/dDDtVx1/Sundarbans-Mangrove-Exploration.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Discover the world's largest mangrove forest and its unique wildlife.",
+    "adventureCost": 1800,
+    "bookingAvailability": "Available",
+    "location": "Sundarbans, India & Bangladesh",
+    "duration": "4 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Boat rides", "Meals", "Guide", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly boats",
+      "Recyclable materials",
+      "Wildlife conservation focus"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry insect repellent",
+      "Use eco-friendly sunscreen",
+      "Follow wildlife safety guidelines"
+    ]
+  },
+  {
+    "id": 37,
+    "adventureTitle": "Amazon River Wildlife Adventure",
+    "image": "https://i.ibb.co.com/DRqxWYW/Amazon-River-Wildlife-Adventure.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Experience the wild beauty of the Amazon River and its vibrant ecosystem.",
+    "adventureCost": 2500,
+    "bookingAvailability": "Available",
+    "location": "Amazon Rainforest, Brazil",
+    "duration": "7 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Boat rides", "Meals", "Guide", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Eco-safe boats",
+      "Waste management system",
+      "Wildlife conservation focus"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry insect repellent",
+      "Use biodegradable toiletries",
+      "Avoid disturbing wildlife"
+    ]
+  },
+  {
+    "id": 43,
+    "adventureTitle": "Yangtze River Cruise and Hike",
+    "image": "https://i.ibb.co.com/VJ660Wf/Yangtze-River-Cruise-and-Hike.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Cruise through the Yangtze River and hike the scenic Three Gorges.",
+    "adventureCost": 2500,
+    "bookingAvailability": "Available",
+    "location": "China",
+    "duration": "7 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Cruise tickets", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Eco-safe waste disposal",
+      "Wildlife-friendly tours",
+      "Solar-powered cruise ships"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Wear hiking boots",
+      "Bring eco-friendly toiletries",
+      "Respect local guidelines"
+    ]
+  },
+  {
+    "id": 32,
+    "adventureTitle": "Borneo Mangrove Wildlife Safari",
+    "image": "https://i.ibb.co.com/51ymDrW/Borneo-Mangrove-Wildlife-Safari.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Journey through Borneo’s lush mangroves and see rare proboscis monkeys.",
+    "adventureCost": 2200,
+    "bookingAvailability": "Available",
+    "location": "Borneo, Malaysia",
+    "duration": "6 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Boat tours", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Wildlife conservation efforts",
+      "Eco-friendly fuel usage",
+      "Minimal waste policies"
     ],
     "maxGroupSize": 8,
     "specialInstructions": [
-      "Wear sturdy trekking boots.",
-      "Pack light but include essentials like water bottles and sunscreen.",
-      "Avoid picking plants or disturbing wildlife."
-    ]
-  },
-  {
-    "id": 3,
-    "adventureTitle": "Swiss Alps Serenity",
-    "image": "https://i.ibb.co.com/QfpJDSD/Swiss-Alps-Serenity.jpg",
-    "categoryName": "Mountain Treks",
-    "shortDescription": "Discover the tranquility of the Swiss Alps with this serene trek.",
-    "adventureCost": 1000,
-    "bookingAvailability": "Available",
-    "location": "Swiss Alps, Switzerland",
-    "duration": "5 Days",
-    "adventureLevel": "Beginner",
-    "includedItems": ["Meals", "Basic Gear", "Local Guide"],
-    "ecoFriendlyFeatures": [
-      "Electric vehicle transfers",
-      "No-trace trekking",
-      "Locally sourced meals"
-    ],
-    "maxGroupSize": 10,
-    "specialInstructions": [
-      "Carry lightweight rain gear.",
-      "Respect local customs and traditions.",
-      "Do not litter; use waste disposal facilities."
-    ]
-  },
-  {
-    "id": 4,
-    "adventureTitle": "https://i.ibb.co.com/SnXx6Zn/Andes-Trail-Challenge.jpg",
-    "image": "https://example.com/images/andes_trail.jpg",
-    "categoryName": "Mountain Treks",
-    "shortDescription": "Embark on a thrilling trek through the Andes Mountains.",
-    "adventureCost": 1500,
-    "bookingAvailability": "Available",
-    "location": "Andes, South America",
-    "duration": "12 Days",
-    "adventureLevel": "Expert",
-    "includedItems": ["Trekking Gear", "Meals", "Emergency Support"],
-    "ecoFriendlyFeatures": [
-      "Organic meals",
-      "Sustainable trail maintenance",
-      "Water refill stations"
-    ],
-    "maxGroupSize": 15,
-    "specialInstructions": [
-      "Acclimatize to altitude before the trek.",
-      "Carry a reusable water bottle.",
-      "Follow the guide's instructions strictly."
-    ]
-  },
-  {
-    "id": 5,
-    "adventureTitle": "Kilimanjaro Summit Trek",
-    "image": "https://i.ibb.co.com/hMjXDMB/Kilimanjaro-Summit-Trek.jpg",
-    "categoryName": "Mountain Treks",
-    "shortDescription": "Conquer the iconic Kilimanjaro with this thrilling expedition.",
-    "adventureCost": 1400,
-    "bookingAvailability": "Available",
-    "location": "Mount Kilimanjaro, Tanzania",
-    "duration": "8 Days",
-    "adventureLevel": "Advanced",
-    "includedItems": ["Guides", "Meals", "Camping Equipment"],
-    "ecoFriendlyFeatures": [
-      "Minimal impact routes",
-      "Eco-friendly waste disposal",
-      "Local staff employment"
-    ],
-    "maxGroupSize": 10,
-    "specialInstructions": [
-      "Carry altitude sickness medication.",
-      "Pack layered clothing for extreme weather changes.",
-      "Stay hydrated throughout the trek."
+      "Carry binoculars",
+      "Bring light clothing",
+      "Pack insect repellent"
     ]
   },
   {
@@ -144,27 +192,297 @@
     ]
   },
   {
-    "id": 7,
-    "adventureTitle": "Patagonia Wilderness Trek",
-    "image": "https://i.ibb.co.com/51WxYM1/Patagonia-Wilderness-Trek.jpg",
-    "categoryName": "Mountain Treks",
-    "shortDescription": "Venture into the wild beauty of Patagonia on this epic trek.",
-    "adventureCost": 1100,
-    "bookingAvailability": "Limited",
-    "location": "Patagonia, Chile/Argentina",
-    "duration": "9 Days",
+    "id": 14,
+    "adventureTitle": "Borneo Forest Expedition",
+    "image": "https://i.ibb.co.com/L9pd82K/Borneo-Forest-Expedition.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Discover the diverse wildlife of Borneo’s rainforests.",
+    "adventureCost": 2200,
+    "bookingAvailability": "Available",
+    "location": "Borneo, Malaysia",
+    "duration": "8 Days",
     "adventureLevel": "Intermediate",
-    "includedItems": ["Camping Supplies", "Meals", "Professional Guides"],
+    "includedItems": [
+      "Guide",
+      "Meals",
+      "Camping gear",
+      "Wildlife viewing tools"
+    ],
     "ecoFriendlyFeatures": [
-      "Solar-powered camps",
+      "Wildlife conservation support",
+      "Eco-safe campsites",
+      "Reusable utensils"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear light boots",
+      "Carry insect repellent",
+      "Stay quiet near wildlife"
+    ]
+  },
+  {
+    "id": 21,
+    "adventureTitle": "Grand Canyon Camping Adventure",
+    "image": "https://i.ibb.co.com/ZBNNpHm/Grand-Canyon-Camping-Adventure.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Camp under the stars in the iconic Grand Canyon.",
+    "adventureCost": 1800,
+    "bookingAvailability": "Available",
+    "location": "Arizona, USA",
+    "duration": "6 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Camping permits", "Meals", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly camping gear",
+      "Minimal waste policy",
+      "Solar-powered devices"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Pack sunscreen",
+      "Wear sturdy hiking shoes",
+      "Carry extra water"
+    ]
+  },
+  {
+    "id": 40,
+    "adventureTitle": "Zambezi River Whitewater Rafting",
+    "image": "https://i.ibb.co.com/S6fkdxg/Zambezi-River-Whitewater-Rafting.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Conquer the world’s most thrilling whitewater rapids on the Zambezi.",
+    "adventureCost": 2300,
+    "bookingAvailability": "Available",
+    "location": "Victoria Falls, Zambia",
+    "duration": "6 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Rafting gear", "Guide", "Meals", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Plastic-free trips",
+      "Wildlife-safe practices",
+      "Sustainable operations"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear protective clothing",
+      "Bring a waterproof camera",
+      "Follow the guide’s instructions"
+    ]
+  },
+
+  {
+    "id": 24,
+    "adventureTitle": "Norwegian Fjords Camping Retreat",
+    "image": "https://i.ibb.co.com/9bfyfGH/Norwegian-Fjords-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Camp by the majestic fjords and enjoy nature’s tranquility.",
+    "adventureCost": 3000,
+    "bookingAvailability": "Available",
+    "location": "Norwegian Fjords, Norway",
+    "duration": "8 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Meals", "Camping gear", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "No single-use plastics",
+      "Renewable energy usage",
+      "Biodegradable waste management"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring waterproof gear",
+      "Respect local customs",
+      "Pack sturdy hiking boots"
+    ]
+  },
+  {
+    "id": 34,
+    "adventureTitle": "Australian Mangrove Eco-Adventure",
+    "image": "https://i.ibb.co.com/Tb52SGJ/Australian-Mangrove-Eco-Adventure.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Discover mangrove habitats and vibrant ecosystems in Australia.",
+    "adventureCost": 2500,
+    "bookingAvailability": "Available",
+    "location": "Queensland, Australia",
+    "duration": "7 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Kayaks", "Meals", "Guide", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Carbon-neutral trips",
+      "Renewable energy usage",
+      "Wildlife protection policies"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Bring waterproof bags",
+      "Carry reef-safe sunscreen",
+      "Follow safety guidelines"
+    ]
+  },
+  {
+    "id": 25,
+    "adventureTitle": "Patagonia Glacial Camping Retreat",
+    "image": "https://i.ibb.co.com/F38sYdy/Patagonia-Glacial-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Camp near stunning glaciers and pristine lakes in Patagonia.",
+    "adventureCost": 2800,
+    "bookingAvailability": "Available",
+    "location": "Patagonia, South America",
+    "duration": "7 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Tents", "Meals", "Guide", "Climbing gear"],
+    "ecoFriendlyFeatures": [
+      "Minimal impact guidelines",
+      "Sustainable tourism practices",
+      "Eco-safe fuels"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Pack thermal clothing",
+      "Carry trekking poles",
+      "Follow safety protocols"
+    ]
+  },
+  {
+    "id": 4,
+    "adventureTitle": "Andes Trail Challenge",
+    "image": "https://i.ibb.co.com/SnXx6Zn/Andes-Trail-Challenge.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Embark on a thrilling trek through the Andes Mountains.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Andes, South America",
+    "duration": "12 Days",
+    "adventureLevel": "Expert",
+    "includedItems": ["Trekking Gear", "Meals", "Emergency Support"],
+    "ecoFriendlyFeatures": [
+      "Organic meals",
+      "Sustainable trail maintenance",
+      "Water refill stations"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Acclimatize to altitude before the trek.",
+      "Carry a reusable water bottle.",
+      "Follow the guide's instructions strictly."
+    ]
+  },
+  {
+    "id": 17,
+    "adventureTitle": "Madagascar Forest Trek",
+    "image": "https://i.ibb.co.com/Z2nhgg6/Madagascar-Forest-Trek.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Explore Madagascar’s unique forests and wildlife.",
+    "adventureCost": 1900,
+    "bookingAvailability": "Available",
+    "location": "Madagascar, Africa",
+    "duration": "6 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Meals", "Camping permits", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Sustainable tourism",
+      "Eco-friendly accommodations",
+      "Wildlife conservation efforts"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Bring trekking poles",
+      "Respect local communities",
+      "Wear comfortable clothing"
+    ]
+  },
+  {
+    "id": 30,
+    "adventureTitle": "Mexican Mangrove Wildlife Adventure",
+    "image": "https://i.ibb.co.com/r0JVbzh/Mexican-Mangrove-Wildlife-Adventure.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Explore the vibrant ecosystem of Mexican mangroves by boat.",
+    "adventureCost": 2000,
+    "bookingAvailability": "Available",
+    "location": "Yucatan Peninsula, Mexico",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Boat tours", "Meals", "Safety equipment", "Guide"],
+    "ecoFriendlyFeatures": [
+      "Eco-safe boat engines",
+      "Recycling options",
+      "Wildlife-friendly practices"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring binoculars",
+      "Use eco-friendly repellents",
+      "Follow local conservation rules"
+    ]
+  },
+  {
+    "id": 39,
+    "adventureTitle": "Ganges River Cultural Adventure",
+    "image": "https://i.ibb.co.com/7XKjR7H/Ganges-River-Cultural-Adventure.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Explore the sacred Ganges River and its cultural significance.",
+    "adventureCost": 1600,
+    "bookingAvailability": "Available",
+    "location": "Varanasi, India",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Boat tours", "Meals", "Guide", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Recyclable materials",
+      "Cultural preservation focus",
+      "Eco-friendly transport"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Respect local traditions",
+      "Use eco-safe products",
+      "Dress modestly"
+    ]
+  },
+  {
+    "id": 26,
+    "adventureTitle": "Alaska Wilderness Camping Retreat",
+    "image": "https://i.ibb.co.com/HLccsw9/Alaska-Wilderness-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Explore Alaska’s remote wilderness with a guided camping retreat.",
+    "adventureCost": 2600,
+    "bookingAvailability": "Available",
+    "location": "Alaska, USA",
+    "duration": "6 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guide", "Meals", "Tents", "Safety gear"],
+    "ecoFriendlyFeatures": [
       "Leave-no-trace policy",
-      "Organic meals"
+      "Eco-safe transportation",
+      "Compostable supplies"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Pack warm layers",
+      "Use reusable water bottles",
+      "Follow safety briefings"
+    ]
+  },
+  {
+    "id": 12,
+    "adventureTitle": "Daintree Rainforest Adventure",
+    "image": "https://i.ibb.co.com/LR6YQPr/Daintree-Rainforest-Adventure.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Walk through one of the world’s oldest rainforests.",
+    "adventureCost": 1800,
+    "bookingAvailability": "Available",
+    "location": "Queensland, Australia",
+    "duration": "5 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Meals", "Lodging", "First Aid"],
+    "ecoFriendlyFeatures": [
+      "Eco-safe tours",
+      "No-waste policy",
+      "Solar-powered facilities"
     ],
     "maxGroupSize": 12,
     "specialInstructions": [
-      "Carry waterproof gear for unexpected rains.",
-      "Respect wildlife and maintain a safe distance.",
-      "Bring a small backpack for daily essentials."
+      "Wear light clothing",
+      "Pack eco-safe sunscreen",
+      "Respect local traditions"
     ]
   },
   {
@@ -192,6 +510,517 @@
     ]
   },
   {
+    "id": 5,
+    "adventureTitle": "Kilimanjaro Summit Trek",
+    "image": "https://i.ibb.co.com/hMjXDMB/Kilimanjaro-Summit-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Conquer the iconic Kilimanjaro with this thrilling expedition.",
+    "adventureCost": 1400,
+    "bookingAvailability": "Available",
+    "location": "Mount Kilimanjaro, Tanzania",
+    "duration": "8 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guides", "Meals", "Camping Equipment"],
+    "ecoFriendlyFeatures": [
+      "Minimal impact routes",
+      "Eco-friendly waste disposal",
+      "Local staff employment"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry altitude sickness medication.",
+      "Pack layered clothing for extreme weather changes.",
+      "Stay hydrated throughout the trek."
+    ]
+  },
+  {
+    "id": 16,
+    "adventureTitle": "Sinharaja Forest Reserve Expedition",
+    "image": "https://i.ibb.co.com/rf08Jdr/Sinharaja-Forest-Reserve-Expedition.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Uncover the beauty of Sri Lanka's biodiverse rainforests.",
+    "adventureCost": 1400,
+    "bookingAvailability": "Available",
+    "location": "Sri Lanka",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Meals", "Lodging", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Minimal waste policy",
+      "Support for local communities",
+      "Reusable bottles"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear comfortable shoes",
+      "Carry sunscreen",
+      "Avoid loud noises"
+    ]
+  },
+  {
+    "id": 31,
+    "adventureTitle": "Sri Lankan Mangrove Adventure",
+    "image": "https://i.ibb.co.com/FbNVHtb/Sri-Lankan-Mangrove-Adventure.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Navigate serene mangrove waterways and discover exotic birds.",
+    "adventureCost": 1600,
+    "bookingAvailability": "Available",
+    "location": "Sri Lanka",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Kayaks", "Meals", "Guide", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Waste management system",
+      "No single-use plastics",
+      "Solar-powered devices"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry sunscreen",
+      "Bring a hat",
+      "Avoid disturbing wildlife"
+    ]
+  },
+  {
+    "id": 38,
+    "adventureTitle": "Colorado River Rafting Expedition",
+    "image": "https://i.ibb.co.com/4JkGPx2/Colorado-River-Rafting-Expedition.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Raft through the thrilling rapids of the Colorado River.",
+    "adventureCost": 1900,
+    "bookingAvailability": "Available",
+    "location": "Grand Canyon, USA",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Rafting gear", "Meals", "Guide", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Minimal waste policy",
+      "No single-use plastics",
+      "Solar-powered support systems"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Bring water shoes",
+      "Wear sun protection",
+      "Follow safety instructions"
+    ]
+  },
+  {
+    "id": 42,
+    "adventureTitle": "Danube River Cycling and Kayaking",
+    "image": "https://i.ibb.co.com/JWTsbsY/Danube-River-Cycling-and-Kayaking.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Cycle and kayak along the scenic Danube River across Europe.",
+    "adventureCost": 2200,
+    "bookingAvailability": "Available",
+    "location": "Central Europe",
+    "duration": "6 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Bicycles", "Kayaks", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Carbon-neutral trips",
+      "Waste management system",
+      "Eco-safe accommodations"
+    ],
+    "maxGroupSize": 15,
+    "specialInstructions": [
+      "Bring cycling gear",
+      "Pack lightweight clothing",
+      "Follow cycling safety rules"
+    ]
+  },
+  {
+    "id": 44,
+    "adventureTitle": "Seine River Romantic Adventure",
+    "image": "https://i.ibb.co.com/xY7jZPG/Seine-River-Romantic-Adventure.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Enjoy a romantic cruise along the Seine River in Paris.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Paris, France",
+    "duration": "2 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Cruise tickets", "Meals", "Guide", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "No-waste meals",
+      "Recyclable packaging",
+      "Eco-safe fuels"
+    ],
+    "maxGroupSize": 25,
+    "specialInstructions": [
+      "Dress elegantly",
+      "Bring a camera",
+      "Respect onboard rules"
+    ]
+  },
+  {
+    "id": 3,
+    "adventureTitle": "Swiss Alps Serenity",
+    "image": "https://i.ibb.co.com/QfpJDSD/Swiss-Alps-Serenity.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Discover the tranquility of the Swiss Alps with this serene trek.",
+    "adventureCost": 1000,
+    "bookingAvailability": "Available",
+    "location": "Swiss Alps, Switzerland",
+    "duration": "5 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Meals", "Basic Gear", "Local Guide"],
+    "ecoFriendlyFeatures": [
+      "Electric vehicle transfers",
+      "No-trace trekking",
+      "Locally sourced meals"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry lightweight rain gear.",
+      "Respect local customs and traditions.",
+      "Do not litter; use waste disposal facilities."
+    ]
+  },
+  {
+    "id": 11,
+    "adventureTitle": "Congo Rainforest Safari",
+    "image": "https://i.ibb.co.com/VYn32vk/Congo-Rainforest-Safari.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Explore Africa’s largest rainforest with expert guides.",
+    "adventureCost": 3000,
+    "bookingAvailability": "Available",
+    "location": "Congo Basin, Africa",
+    "duration": "10 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Guide", "Meals", "Safety gear", "Camping gear"],
+    "ecoFriendlyFeatures": [
+      "Recycling initiatives",
+      "Plastic-free zone",
+      "Local cultural exchange"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Vaccinate before travel",
+      "Carry lightweight gear",
+      "Pack waterproof boots"
+    ]
+  },
+  {
+    "id": 15,
+    "adventureTitle": "Costa Rica Rainforest Tour",
+    "image": "https://i.ibb.co.com/GcsPSkg/Costa-Rica-Rainforest-Tour.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Explore the lush rainforests and unique wildlife of Costa Rica.",
+    "adventureCost": 1600,
+    "bookingAvailability": "Available",
+    "location": "Costa Rica, Central America",
+    "duration": "5 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Lodging", "Meals", "Transportation"],
+    "ecoFriendlyFeatures": [
+      "Reforestation projects",
+      "Sustainable lodges",
+      "Reusable supplies"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Pack light clothing",
+      "Use biodegradable products",
+      "Respect cultural norms"
+    ]
+  },
+  {
+    "id": 27,
+    "adventureTitle": "Everglades Camping Retreat",
+    "image": "https://i.ibb.co.com/j4fnZXb/Everglades-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Experience unique wildlife in the Florida Everglades.",
+    "adventureCost": 1400,
+    "bookingAvailability": "Available",
+    "location": "Florida, USA",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Tents", "Guide", "Meals", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Wildlife protection focus",
+      "Recycling options",
+      "Reusable cutlery"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry mosquito repellent",
+      "Pack lightweight clothing",
+      "Follow park rules"
+    ]
+  },
+  {
+    "id": 35,
+    "adventureTitle": "Thailand Mangrove Exploration",
+    "image": "https://i.ibb.co.com/7YTPWF4/Thailand-Mangrove-Exploration.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Explore Thailand’s picturesque mangroves and spot exotic birds.",
+    "adventureCost": 1700,
+    "bookingAvailability": "Available",
+    "location": "Phuket, Thailand",
+    "duration": "4 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Boat rides", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "No plastic waste policy",
+      "Wildlife-safe practices",
+      "Solar-powered equipment"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry a camera",
+      "Bring light clothing",
+      "Respect local customs"
+    ]
+  },
+  {
+    "id": 22,
+    "adventureTitle": "Yosemite National Park Retreat",
+    "image": "https://i.ibb.co.com/q7zxvvg/Yosemite-National-Park-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Reconnect with nature in Yosemite's scenic landscapes.",
+    "adventureCost": 2000,
+    "bookingAvailability": "Available",
+    "location": "California, USA",
+    "duration": "7 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Tents", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Solar showers",
+      "Recycling stations",
+      "Eco-safe detergents"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Respect wildlife habitats",
+      "Carry insect repellent",
+      "Pack warm sleeping bags"
+    ]
+  },
+  {
+    "id": 7,
+    "adventureTitle": "Patagonia Wilderness Trek",
+    "image": "https://i.ibb.co.com/51WxYM1/Patagonia-Wilderness-Trek.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "Venture into the wild beauty of Patagonia on this epic trek.",
+    "adventureCost": 1100,
+    "bookingAvailability": "Limited",
+    "location": "Patagonia, Chile/Argentina",
+    "duration": "9 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camping Supplies", "Meals", "Professional Guides"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered camps",
+      "Leave-no-trace policy",
+      "Organic meals"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry waterproof gear for unexpected rains.",
+      "Respect wildlife and maintain a safe distance.",
+      "Bring a small backpack for daily essentials."
+    ]
+  },
+  {
+    "id": 18,
+    "adventureTitle": "Sundarbans Mangrove Forest Expedition",
+    "image": "https://i.ibb.co.com/D9rmJTk/Sundarbans-Mangrove-Forest-Expedition.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Experience the largest mangrove forest in the world.",
+    "adventureCost": 2000,
+    "bookingAvailability": "Available",
+    "location": "Sundarbans, Bangladesh",
+    "duration": "7 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Guide", "Boat rides", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Mangrove conservation",
+      "Plastic-free zone",
+      "Eco-safe tourism"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Carry rain gear",
+      "Use binoculars",
+      "Follow safety guidelines"
+    ]
+  },
+  {
+    "id": 19,
+    "adventureTitle": "Rocky Mountain Camping Retreat",
+    "image": "https://i.ibb.co.com/MPJS9pX/Rocky-Mountain-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "A serene camping experience amidst the Rocky Mountains.",
+    "adventureCost": 1500,
+    "bookingAvailability": "Available",
+    "location": "Colorado, USA",
+    "duration": "5 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Tents", "Meals", "Campfire equipment", "Guide"],
+    "ecoFriendlyFeatures": [
+      "Waste segregation",
+      "Solar-powered lighting",
+      "Eco-friendly toiletries"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry warm clothing",
+      "Bring hiking boots",
+      "Use reusable utensils"
+    ]
+  },
+
+  {
+    "id": 23,
+    "adventureTitle": "Sahara Desert Camping Retreat",
+    "image": "https://i.ibb.co.com/fDYM4tG/Sahara-Desert-Camping-Retreat.jpg",
+    "categoryName": "Camping Retreats",
+    "shortDescription": "Camp in the vast and breathtaking Sahara Desert.",
+    "adventureCost": 2500,
+    "bookingAvailability": "Available",
+    "location": "Sahara Desert, Africa",
+    "duration": "5 Days",
+    "adventureLevel": "Advanced",
+    "includedItems": ["Tents", "Meals", "Guide", "Camel rides"],
+    "ecoFriendlyFeatures": [
+      "No plastic policy",
+      "Solar energy usage",
+      "Minimal impact guidelines"
+    ],
+    "maxGroupSize": 6,
+    "specialInstructions": [
+      "Bring head coverings",
+      "Carry light clothing",
+      "Stay hydrated"
+    ]
+  },
+
+  {
+    "id": 41,
+    "adventureTitle": "Nile River Ancient Exploration",
+    "image": "https://i.ibb.co.com/D1zZ8K0/Nile-River-Ancient-Exploration.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Cruise the historic Nile River and explore ancient Egyptian wonders.",
+    "adventureCost": 2700,
+    "bookingAvailability": "Available",
+    "location": "Egypt",
+    "duration": "7 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Boat tours", "Guide", "Meals", "Safety equipment"],
+    "ecoFriendlyFeatures": [
+      "Solar-powered boats",
+      "Cultural heritage preservation",
+      "No single-use plastics"
+    ],
+    "maxGroupSize": 20,
+    "specialInstructions": [
+      "Carry sunscreen",
+      "Respect local customs",
+      "Avoid using plastic products"
+    ]
+  },
+
+  {
+    "id": 36,
+    "adventureTitle": "Vietnam Mangrove River Adventure",
+    "image": "https://i.ibb.co.com/5KnQsyM/Vietnam-Mangrove-River-Adventure.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Sail along Vietnam’s mangrove-lined rivers and explore local villages.",
+    "adventureCost": 2100,
+    "bookingAvailability": "Available",
+    "location": "Mekong Delta, Vietnam",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Boat rides", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Recycling stations",
+      "Eco-safe transportation",
+      "Wildlife conservation efforts"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Carry sunscreen",
+      "Bring reusable utensils",
+      "Follow village etiquette"
+    ]
+  },
+
+  {
+    "id": 33,
+    "adventureTitle": "Philippines Mangrove Island Expedition",
+    "image": "https://i.ibb.co.com/hK2zLND/Philippines-Mangrove-Island-Expedition.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Paddle through mangrove-lined islands and observe marine life.",
+    "adventureCost": 1800,
+    "bookingAvailability": "Available",
+    "location": "Palawan, Philippines",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Kayaks", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "No-plastic policy",
+      "Recyclable equipment",
+      "Marine conservation focus"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Wear comfortable clothing",
+      "Bring eco-safe toiletries",
+      "Respect local traditions"
+    ]
+  },
+
+  {
+    "id": 29,
+    "adventureTitle": "Everglades Mangrove Kayaking Expedition",
+    "image": "https://i.ibb.co.com/WzqRS2f/Everglades-Mangrove-Kayaking-Expedition.jpg",
+    "categoryName": "Mangrove Forest Expeditions",
+    "shortDescription": "Kayak through the intricate mangrove tunnels of the Everglades.",
+    "adventureCost": 1400,
+    "bookingAvailability": "Available",
+    "location": "Florida, USA",
+    "duration": "3 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Kayaks", "Meals", "Safety gear", "Guide"],
+    "ecoFriendlyFeatures": [
+      "Minimal waste policy",
+      "No single-use plastics",
+      "Eco-safe transportation"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear water shoes",
+      "Bring reusable water bottles",
+      "Respect marine life"
+    ]
+  },
+
+  {
+    "id": 2,
+    "adventureTitle": "Rocky Peaks Adventure",
+    "image": "https://i.ibb.co.com/znFSSVC/Rocky-Peaks-Adventure.jpg",
+    "categoryName": "Mountain Treks",
+    "shortDescription": "A challenging trek to the highest peaks of the Rocky Mountains.",
+    "adventureCost": 800,
+    "bookingAvailability": "Limited",
+    "location": "Rocky Mountains, USA",
+    "duration": "7 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Camping Equipment", "Meals", "Guided Tours"],
+    "ecoFriendlyFeatures": [
+      "Eco-friendly campsites",
+      "Reusable utensils",
+      "Local produce meals"
+    ],
+    "maxGroupSize": 8,
+    "specialInstructions": [
+      "Wear sturdy trekking boots.",
+      "Pack light but include essentials like water bottles and sunscreen.",
+      "Avoid picking plants or disturbing wildlife."
+    ]
+  },
+
+  {
     "id": 9,
     "adventureTitle": "Alpine Meadows Exploration",
     "image": "https://i.ibb.co.com/6D0n2fh/Alpine-Meadows-Exploration.jpg",
@@ -213,6 +1042,56 @@
       "Carry lightweight gear for easy movement.",
       "Capture memories but avoid disturbing wildlife.",
       "Respect trail guidelines to maintain its pristine nature."
+    ]
+  },
+
+  {
+    "id": 13,
+    "adventureTitle": "Redwood Forest Hike",
+    "image": "https://i.ibb.co.com/wY5gCC6/Redwood-Forest-Hike.jpg",
+    "categoryName": "Forest Expeditions",
+    "shortDescription": "Explore the majestic redwoods in California.",
+    "adventureCost": 1200,
+    "bookingAvailability": "Available",
+    "location": "California, USA",
+    "duration": "3 Days",
+    "adventureLevel": "Beginner",
+    "includedItems": ["Guide", "Camping gear", "Safety gear", "Meals"],
+    "ecoFriendlyFeatures": [
+      "Wildlife protection efforts",
+      "Eco-friendly lodges",
+      "Reusable containers"
+    ],
+    "maxGroupSize": 10,
+    "specialInstructions": [
+      "Pack warm clothing",
+      "Carry a reusable water bottle",
+      "Follow trail rules"
+    ]
+  },
+
+  {
+    "id": 45,
+    "adventureTitle": "Mekong River Village Expedition",
+    "image": "https://i.ibb.co.com/F5DJg4G/Mekong-River-Village-Expedition.jpg",
+    "categoryName": "River Adventures",
+    "shortDescription": "Discover riverside villages and cultural experiences along the Mekong.",
+    "adventureCost": 2000,
+    "bookingAvailability": "Available",
+    "location": "Southeast Asia",
+    "duration": "5 Days",
+    "adventureLevel": "Intermediate",
+    "includedItems": ["Boat tours", "Guide", "Meals", "Safety gear"],
+    "ecoFriendlyFeatures": [
+      "Cultural preservation focus",
+      "Eco-friendly boat engines",
+      "No plastic waste"
+    ],
+    "maxGroupSize": 12,
+    "specialInstructions": [
+      "Carry reusable utensils",
+      "Bring comfortable clothing",
+      "Respect local customs"
     ]
   }
 ]
