@@ -1,14 +1,21 @@
 import { useContext, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import { CategoryContext } from "../provider/AllDataContext";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const { setSelectedCategory } = useContext(CategoryContext);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const navigateLogin = () => {
     navigate("/login");
+  };
+  const handleAllCategory = (e) => {
+    e.preventDefault();
+    setSelectedCategory(null); 
+    navigate("/");
   };
   return (
     <div className="bg-blue-950 text-white">
@@ -31,19 +38,22 @@ const Navbar = () => {
                 open ? "dropdown-content" : " hidden"
               }`}
             >
-              <NavLink>Home </NavLink>
+              <NavLink onClick={handleAllCategory}>Home </NavLink>
               <NavLink>Blog</NavLink>
-              <NavLink>Contact Now </NavLink>
+              <NavLink onClick={handleAllCategory}>All Caterogy </NavLink>
               <NavLink>Dashboard </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl"> Eco-Adventure Experiences </a>
+          <Link to={"/"} className="btn btn-ghost text-xl">
+            {" "}
+            Eco-Adventure Experiences{" "}
+          </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-10 px-1">
-            <NavLink>Home </NavLink>
+            <NavLink onClick={handleAllCategory}>Home </NavLink>
             <NavLink>Blog</NavLink>
-            <NavLink>Contact Now </NavLink>
+            <NavLink onClick={handleAllCategory}>All Caterogy </NavLink>
             <NavLink>Dashboard </NavLink>
           </ul>
         </div>
