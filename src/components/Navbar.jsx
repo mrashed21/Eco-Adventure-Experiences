@@ -1,9 +1,15 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
   const [open, setOpen] = useState(false);
+  const navigate = useNavigate();
+  const navigateLogin = () => {
+    navigate("/login");
+  };
   return (
     <div className="bg-blue-950 text-white">
       <div className="navbar w-11/12 mx-auto">
@@ -31,7 +37,7 @@ const Navbar = () => {
               <NavLink>Dashboard </NavLink>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Eco-Adventure Experiences </a>
+          <a className="btn btn-ghost text-xl"> Eco-Adventure Experiences </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-10 px-1">
@@ -42,7 +48,18 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <Link className="btn">Login</Link>
+          {user && user.email ? (
+            <button onClick={logOut} className="btn btn-neutral rounded-none ">
+              logout
+            </button>
+          ) : (
+            <button
+              onClick={navigateLogin}
+              className="btn btn-neutral rounded-none "
+            >
+              Login
+            </button>
+          )}
         </div>
       </div>
     </div>
