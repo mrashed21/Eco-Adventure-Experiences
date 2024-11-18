@@ -1,6 +1,12 @@
 /* eslint-disable react/prop-types */
 
+import { useNavigate } from "react-router-dom";
+
 const CardDetails = ({ singleCard }) => {
+  const navigate = useNavigate();
+  const handlShowDetails = () => {
+    navigate(`/category/${singleCard.id}`);
+  };
   return (
     <div className="max-w-md mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
       <img
@@ -26,8 +32,10 @@ const CardDetails = ({ singleCard }) => {
           </div>
         )}
 
-        {/* Explore Now Button */}
-        <button className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600">
+        <button
+          onClick={handlShowDetails}
+          className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600"
+        >
           Explore Now
         </button>
       </div>
