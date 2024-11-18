@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { AuthContext } from "../provider/AuthProvider";
 
 const SignUp = () => {
-  const { handleSignUp, setuser } = useContext(AuthContext);
+  const { handleSignUp, handleLoginGoogle, setuser } = useContext(AuthContext);
 
   const [showPassword, setShowPassword] = useState(false);
 
@@ -96,6 +96,9 @@ const SignUp = () => {
 
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Sign Up</button>
+                </div>
+                <div className="form-control mt-6">
+                  <button onClick={handleLoginGoogle} className="btn btn-primary">Sign Up with Google</button>
                 </div>
               </form>
             </div>

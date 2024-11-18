@@ -1,10 +1,13 @@
 /* eslint-disable react/prop-types */
 import {
   createUserWithEmailAndPassword,
+  GoogleAuthProvider,
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  signInWithPopup,
   signOut,
 } from "firebase/auth";
+
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../firebase/firebase.init";
 
@@ -20,18 +23,21 @@ const AuthProvider = ({ children }) => {
   const handleLogin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
+  const googleProvider = new GoogleAuthProvider();
+  const handleLoginGoogle = () => {
+    signInWithPopup(auth, googleProvider).then((result) => {
+      setUser(result.user);
+    });
+  };
   const logOut = () => {
-    return signOut(auth)
-      .then((result) => {
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log("ERROR", error.message);
-      });
+    return signOut(auth).then((result) => {
+      console.log(result);
+    });
   };
   const authInfo = {
     handleSignUp,
     handleLogin,
+    handleLoginGoogle,
     logOut,
     user,
     setUser,

@@ -3,7 +3,7 @@ import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 const Login = () => {
-  const { handleLogin } = useContext(AuthContext);
+  const { handleLogin, handleLoginGoogle } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const handleLoginForm = (e) => {
     e.preventDefault();
@@ -73,6 +73,14 @@ const Login = () => {
                 </div>
                 <div className="form-control mt-6">
                   <button className="btn btn-primary">Login</button>
+                </div>
+                <div className="form-control mt-6">
+                  <button
+                    onClick={handleLoginGoogle}
+                    className="btn btn-primary"
+                  >
+                    Login with Google
+                  </button>
                 </div>
               </form>
             </div>
