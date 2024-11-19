@@ -19,47 +19,54 @@ const CardDetails = ({ singleCard }) => {
   };
 
   return (
-    <div
-      data-aos="zoom-in-down"
-      data-aos-easing="linear"
-      data-aos-duration="1500"
-      className="card flex-row rounded-lg bg-base-100 shadow-xl p-4"
-    >
-      <figure
-      
-      >
-        <img
-          className="w-full rounded-xl object-cover"
-          src={singleCard.image}
-          alt={singleCard.adventureTitle}
-        />
-      </figure>
+    <div className="">
       <div
-       
-        className="p-4 flex flex-col flex-grow"
+        data-aos="zoom-in"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+        className="card flex-row rounded-lg bg-base-100 shadow-xl p-4"
       >
-        <h2 className="text-xl font-semibold text-gray-800">
-          {singleCard.adventureTitle}
-        </h2>
+        <figure
+           data-aos="fade-right"
+           data-aos-easing="linear"
+           data-aos-duration="1000"
+          className=" w-1/2"
+        >
+          <img
+            className="w-full rounded-xl object-cover"
+            src={singleCard.image}
+            alt={singleCard.adventureTitle}
+          />
+        </figure>
+        <div
+       data-aos="fade-left"
+       data-aos-easing="linear"
+       data-aos-duration="1000"
+          className="p-4 flex flex-col flex-grow  w-1/2"
+        >
+          <h2 className="text-xl font-semibold text-gray-800">
+            {singleCard.adventureTitle}
+          </h2>
 
-        {singleCard.ecoFriendlyFeatures && (
-          <div className="my-2 flex flex-col flex-grow">
-            <h3 className="text-lg font-medium">Eco-Friendly Features:</h3>
-            <ol className="list-decimal pl-6 mt-2 text-[#09080F99] text-lg">
-              {singleCard.ecoFriendlyFeatures.map((feature, idx) => (
-                <li key={idx}>{feature}</li>
-              ))}
-            </ol>
+          {singleCard.ecoFriendlyFeatures && (
+            <div className="my-2 flex flex-col flex-grow">
+              <h3 className="text-lg font-medium">Eco-Friendly Features:</h3>
+              <ol className="list-decimal pl-6 mt-2 text-[#09080F99] text-lg">
+                {singleCard.ecoFriendlyFeatures.map((feature, idx) => (
+                  <li key={idx}>{feature}</li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          <div className="card-actions mt-auto">
+            <button
+              onClick={handlShowDetails}
+              className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600"
+            >
+              Adventure Detail
+            </button>
           </div>
-        )}
-
-        <div className="card-actions mt-auto">
-          <button
-            onClick={handlShowDetails}
-            className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600"
-          >
-            Explore Now
-          </button>
         </div>
       </div>
     </div>
