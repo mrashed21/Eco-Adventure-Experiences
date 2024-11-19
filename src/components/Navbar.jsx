@@ -1,8 +1,8 @@
 import { useContext, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { Link, NavLink, useNavigate } from "react-router-dom";
-import { AuthContext } from "../provider/AuthProvider";
 import { CategoryContext } from "../provider/AllDataContext";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -12,13 +12,17 @@ const Navbar = () => {
   const navigateLogin = () => {
     navigate("/login");
   };
+  const navigateProfile = () => {
+    navigate("/profile");
+  };
+
   const handleAllCategory = (e) => {
     e.preventDefault();
-    setSelectedCategory(null); 
+    setSelectedCategory(null);
     navigate("/");
   };
   return (
-    <div className="bg-blue-950 text-white">
+    <div className="bg-blue-950 text-white sticky top-0 z-50">
       <div className="navbar w-11/12 mx-auto">
         <div className="navbar-start">
           <div className="dropdown">
@@ -52,12 +56,20 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-10 px-1">
             <NavLink onClick={handleAllCategory}>Home </NavLink>
-            <NavLink>Blog</NavLink>
+
             <NavLink onClick={handleAllCategory}>All Caterogy </NavLink>
-            <NavLink>Dashboard </NavLink>
+            <NavLink to={"/blog"}>Blog</NavLink>
+            {user && <NavLink to={"/profile"}>My Profile </NavLink>}
           </ul>
         </div>
         <div className="navbar-end">
+          {user && (
+            <div
+              title={user.email}
+              onClick={navigateProfile}
+              className="w-10 h-10 rounded-full bg-white"
+            ></div>
+          )}
           {user && user.email ? (
             <button onClick={logOut} className="btn btn-neutral rounded-none ">
               logout

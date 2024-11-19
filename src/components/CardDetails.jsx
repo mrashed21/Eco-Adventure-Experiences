@@ -1,34 +1,54 @@
 /* eslint-disable react/prop-types */
-
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const CardDetails = ({ singleCard }) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+    });
+  }, []);
+
   const navigate = useNavigate();
+
   const handlShowDetails = () => {
     navigate(`/category/${singleCard.id}`);
   };
+
   return (
-    <div className="card rounded-lg bg-base-100 shadow-xl ">
-      <figure className="">
+    <div
+      data-aos="zoom-in-down"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+      className="card flex-row rounded-lg bg-base-100 shadow-xl p-4"
+    >
+      <figure
+      
+      >
         <img
-          className="w-full h-56 object-cover"
+          className="w-full rounded-xl object-cover"
           src={singleCard.image}
           alt={singleCard.adventureTitle}
         />
       </figure>
-      <div className="p-4 flex flex-col flex-grow">
+      <div
+       
+        className="p-4 flex flex-col flex-grow"
+      >
         <h2 className="text-xl font-semibold text-gray-800">
           {singleCard.adventureTitle}
         </h2>
 
         {singleCard.ecoFriendlyFeatures && (
           <div className="my-2 flex flex-col flex-grow">
-            <h3 className="text-lg font-medium">Eco Friendly Features:</h3>
+            <h3 className="text-lg font-medium">Eco-Friendly Features:</h3>
             <ol className="list-decimal pl-6 mt-2 text-[#09080F99] text-lg">
-              {singleCard.ecoFriendlyFeatures &&
-                singleCard.ecoFriendlyFeatures.map((features, idx) => (
-                  <li key={idx}>{features}</li>
-                ))}
+              {singleCard.ecoFriendlyFeatures.map((feature, idx) => (
+                <li key={idx}>{feature}</li>
+              ))}
             </ol>
           </div>
         )}
@@ -36,7 +56,7 @@ const CardDetails = ({ singleCard }) => {
         <div className="card-actions mt-auto">
           <button
             onClick={handlShowDetails}
-            className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600 "
+            className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600"
           >
             Explore Now
           </button>

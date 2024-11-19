@@ -1,16 +1,18 @@
+
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
-import { getAuth } from "firebase/auth";
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyASjy00N90HTq8YSS6zkNYnAJHnYLeTWHI",
-  authDomain: "eco-adventure-experience-1e120.firebaseapp.com",
-  projectId: "eco-adventure-experience-1e120",
-  storageBucket: "eco-adventure-experience-1e120.firebasestorage.app",
-  messagingSenderId: "1018667975587",
-  appId: "1:1018667975587:web:ac9cd9d5d9fd859d185016",
+  apiKey: import.meta.env.VITE_apiKey,
+  authDomain: import.meta.env.VITE_authDomain,
+  projectId: import.meta.env.VITE_projectId,
+  storageBucket: import.meta.env.VITE_storageBucket,
+  messagingSenderId: import.meta.env.VITE_messagingSenderId,
+  appId: import.meta.env.VITE_appId,
 };
 
 // Initialize Firebase

@@ -5,9 +5,11 @@ import SignUp from "../components/SignUp";
 import SingleCardDetails from "../components/SingleCardDetails";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
+import MyProfile from "../pages/MyProfile";
 import CategoryProvider from "../provider/AllDataContext";
 import AuthProvider from "../provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute";
+import Blog from "../pages/Blog";
 
 const routes = createBrowserRouter([
   {
@@ -36,7 +38,6 @@ const routes = createBrowserRouter([
         path: "category/:id",
         element: (
           <PrivateRoute>
-            {" "}
             <SingleCardDetails />
           </PrivateRoute>
         ),
@@ -49,6 +50,18 @@ const routes = createBrowserRouter([
       {
         path: "/signup",
         element: <SignUp />,
+      },
+      {
+        path: "/blog",
+        element: <Blog/>,
+      },
+      {
+        path: "/profile",
+        element: (
+          <PrivateRoute>
+            <MyProfile />
+          </PrivateRoute>
+        ),
       },
     ],
   },
