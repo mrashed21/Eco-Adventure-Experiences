@@ -16,7 +16,8 @@ const CardContainer = () => {
 
   return (
     <div className="w-11/12 mx-auto my-20 px-20  ">
-      <h1 className="text-center text-4xl font-bold mb-10">Eco-Adventure Experiences 
+      <h1 className="text-center text-4xl font-bold mb-10">
+        Eco-Adventure Experiences
       </h1>
       <div className="space-y-5">
         {displayedData.map((singleCard) => (
@@ -25,10 +26,10 @@ const CardContainer = () => {
       </div>
 
       {!showAll && filteredData.length > 9 && (
-        <div className="mt-6 text-center">
+        <div className="mt-6 text-center px-10">
           <button
             onClick={() => setShowAll(true)}
-            className="bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600  mt-3"
+            className="w-full btn btn-primary text-white font-semibold rounded-full text-lg"
           >
             See More
           </button>

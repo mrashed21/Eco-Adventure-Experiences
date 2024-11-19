@@ -60,7 +60,7 @@ const Banner = () => {
             </p>
             <a
               href={slide.buttonLink}
-              className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+              className="px-10 btn btn-primary text-white font-semibold rounded-full text-lg"
             >
               {slide.buttonText}
             </a>

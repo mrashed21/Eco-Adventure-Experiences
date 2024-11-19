@@ -5,6 +5,7 @@ import { AuthContext } from "../provider/AuthProvider";
 const Login = () => {
   const { handleLogin, handleLoginGoogle } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+  
   const handleLoginForm = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -12,6 +13,7 @@ const Login = () => {
     handleLogin(email, password).then((result) => {
       console.log(result);
     });
+    
   };
   return (
     <>

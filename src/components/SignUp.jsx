@@ -98,7 +98,12 @@ const SignUp = () => {
                   <button className="btn btn-primary">Sign Up</button>
                 </div>
                 <div className="form-control mt-6">
-                  <button onClick={handleLoginGoogle} className="btn btn-primary">Sign Up with Google</button>
+                  <button
+                    onClick={handleLoginGoogle}
+                    className="btn btn-primary"
+                  >
+                    Sign Up with Google
+                  </button>
                 </div>
               </form>
             </div>

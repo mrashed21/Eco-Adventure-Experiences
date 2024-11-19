@@ -62,7 +62,7 @@ const CardDetails = ({ singleCard }) => {
           <div className="card-actions mt-auto">
             <button
               onClick={handlShowDetails}
-              className="w-full bg-blue-500 text-white font-semibold py-2 rounded-lg hover:bg-blue-600"
+              className="w-full btn btn-primary text-white font-semibold rounded-full text-lg"
             >
               Adventure Detail
             </button>
