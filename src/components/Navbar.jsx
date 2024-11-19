@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { CategoryContext } from "../provider/AllDataContext";
 import { AuthContext } from "../provider/AuthProvider";
 
@@ -38,20 +38,18 @@ const Navbar = () => {
             </div>
             <ul
               tabIndex={0}
-              className={`menu menu-sm  bg-blue-950 rounded-box z-[1] mt-3 w-52 p-2 shadow ${
+              className={`menu menu-sm  bg-blue-950 rounded-box z-[1] mt-3 w-52 h-60 p-10 gap-5 shadow ${
                 open ? "dropdown-content" : " hidden"
               }`}
             >
               <NavLink onClick={handleAllCategory}>Home </NavLink>
-              <NavLink>Blog</NavLink>
+
               <NavLink onClick={handleAllCategory}>All Caterogy </NavLink>
-              <NavLink>Dashboard </NavLink>
+              <NavLink to={"/blog"}>Blog</NavLink>
+              {user && <NavLink to={"/profile"}>My Profile </NavLink>}
             </ul>
           </div>
-          <Link to={"/"} className="btn btn-ghost text-xl">
-            {" "}
-            Eco-Adventure Experiences{" "}
-          </Link>
+          <p className=" text-xs font-medium md:text-xl">Eco-Adventure</p>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal gap-10 px-1">
@@ -67,11 +65,11 @@ const Navbar = () => {
             <div
               title={user.email}
               onClick={navigateProfile}
-              className="w-10 h-10 rounded-full bg-white"
+              className="w-8 h-8 md:w-10 md:h-10 rounded-full bg-white"
             ></div>
           )}
           {user && user.email ? (
-            <button onClick={logOut} className="btn btn-neutral rounded-none ">
+            <button onClick={logOut} className=" ml-2 btn btn-sm rounded-md md:btn-neutral md:rounded-none ">
               logout
             </button>
           ) : (
