@@ -55,7 +55,7 @@ const Banner = () => {
           </div>
           <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
             <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
-            <p className="text-lg mx-20 text-center mb-4">
+            <p className="text-lg mx-4 md:mx-20 text-center mb-4">
               {slide.description}
             </p>
             <a
