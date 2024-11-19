@@ -24,13 +24,13 @@ const CardDetails = ({ singleCard }) => {
         data-aos="zoom-in"
         data-aos-easing="linear"
         data-aos-duration="1000"
-        className="card flex-row rounded-lg bg-base-100 shadow-xl p-4"
+        className="card md:flex-row rounded-lg bg-base-100 shadow-xl p-4"
       >
         <figure
            data-aos="fade-right"
            data-aos-easing="linear"
            data-aos-duration="1000"
-          className=" w-1/2"
+          className=" md:w-1/2"
         >
           <img
             className="w-full rounded-xl object-cover"
@@ -42,7 +42,7 @@ const CardDetails = ({ singleCard }) => {
        data-aos="fade-left"
        data-aos-easing="linear"
        data-aos-duration="1000"
-          className="p-4 flex flex-col flex-grow  w-1/2"
+          className="p-4 flex flex-col flex-grow  md:w-1/2"
         >
           <h2 className="text-xl font-semibold text-gray-800">
             {singleCard.adventureTitle}

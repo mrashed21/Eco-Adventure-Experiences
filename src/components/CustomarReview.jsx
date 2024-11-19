@@ -66,46 +66,44 @@ const CustomarReview = () => {
     });
   }, []);
   return (
-    
-      <div className="py-12 pb-20 bg-gray-100">
-        <div className="w-10/12  mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Customer Reviews</h2>
-          <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-            {reviews.map((review) => (
-              <div
-                data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1000"
-                key={review.id}
-                className="bg-white shadow-lg rounded-lg p-6 text-left"
-              >
-                <div className="flex items-center mb-4">
-                  <img
-                    src={review.image}
-                    alt={review.name}
-                    className="w-16 h-16 rounded-full mr-4 object-cover"
-                  />
-                  <div>
-                    <h3 className="text-lg font-semibold">{review.name}</h3>
-                    <p className="text-sm text-gray-500">{review.date}</p>
-                  </div>
-                </div>
-                <p className="text-gray-700 mb-4">{review.review}</p>
+    <div className="py-12 pb-20 bg-gray-100">
+      <div className="w-10/12  mx-auto text-center">
+        <h2 className="text-4xl font-bold mb-8">Customer Reviews</h2>
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+          {reviews.map((review) => (
+            <div
+              data-aos="fade-right"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              key={review.id}
+              className="bg-white shadow-lg rounded-lg p-6 text-left"
+            >
+              <div className="flex items-center mb-4">
+                <img
+                  src={review.image}
+                  alt={review.name}
+                  className="w-16 h-16 rounded-full mr-4 object-cover"
+                />
                 <div>
-                  <ReactStars
-                    count={5}
-                    value={review.rating}
-                    size={24}
-                    edit={false}
-                    activeColor="#ffd700"
-                  />
+                  <h3 className="text-lg font-semibold">{review.name}</h3>
+                  <p className="text-sm text-gray-500">{review.date}</p>
                 </div>
               </div>
-            ))}
-          </div>
+              <p className="text-gray-700 mb-4">{review.review}</p>
+              <div>
+                <ReactStars
+                  count={5}
+                  value={review.rating}
+                  size={24}
+                  edit={false}
+                  activeColor="#ffd700"
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-   
+    </div>
   );
 };
 

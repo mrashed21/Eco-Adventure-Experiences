@@ -1,29 +1,73 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const SignUp = () => {
-  const { handleSignUp, handleLoginGoogle, setuser } = useContext(AuthContext);
+  const { handleSignUp, handleLoginGoogle, setUser } = useContext(AuthContext);
 
   const [showPassword, setShowPassword] = useState(false);
+  const [error, setError] = useState("");
 
+  const validatePassword = (password) => {
+    if (!/[a-z]/.test(password)) {
+      return "Password must contain at least one lowercase letter.";
+    }
+    if (!/[A-Z]/.test(password)) {
+      return "Password must contain at least one uppercase letter.";
+    }
+    if (!/\d/.test(password)) {
+      return "Password must contain at least one numeric character.";
+    }
+    if (!/\W/.test(password)) {
+      return "Password must contain at least one special character.";
+    }
+    if (password.length < 6) {
+      return "Password must be at least 6 characters long.";
+    }
+    return "";
+  };
+  // const location = useLocation();
+  const navigate = useNavigate();
   const handleSignForm = (e) => {
     e.preventDefault();
-    // const name = e.target.name.value;
-    // const profile = e.target.profile.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    const terms = e.target.terms.checked;
-    console.log(terms);
-    handleSignUp(email, password).then((result) => {
-      setuser(result.user);
-    });
+
+    const passwordError = validatePassword(password);
+    if (passwordError) {
+      setError(passwordError);
+      return;
+    }
+
+    handleSignUp(email, password)
+      .then((result) => {
+        setUser(result.user);
+        navigate("/");
+        toast.success("Signup successful!", {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+        setError("");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
+
   return (
     <>
       <div className="bg-purple-100 py-10 ">
         <div className="hero w-6/12 mx-auto min-h-screen">
-          <div className="hero-content  w-full flex-col">
+          <div className="hero-content w-full flex-col">
             <div className="card bg-base-100 w-full shrink-0 shadow-md">
               <form onSubmit={handleSignForm} className="card-body">
                 <div className="form-control">
@@ -80,29 +124,26 @@ const SignUp = () => {
                   >
                     {showPassword ? <FaEyeSlash /> : <FaEye />}
                   </button>
+                  {error && (
+                    <p className="text-red-500 text-sm text-center mt-3">
+                      {error}
+                    </p>
+                  )}
                 </div>
-                <div className="form-control ">
-                  <label className="label cursor-pointer justify-start gap-2">
-                    <input
-                      type="checkbox"
-                      name="terms"
-                      className="checkbox h-5 w-5 checkbox-primary"
-                    />
-                    <span className="text-sm font-semibold">
-                      Agree to Terms and Conditions
-                    </span>
-                  </label>
-                </div>
-
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Sign Up</button>
+                  <button className="btn btn-primary rounded-full">
+                    Sign Up
+                  </button>
                 </div>
                 <div className="form-control mt-6">
                   <button
                     onClick={handleLoginGoogle}
-                    className="btn btn-primary"
+                    className="btn btn-outline rounded-full text-black"
                   >
-                    Sign Up with Google
+                    <span className="text-2xl">
+                      <FcGoogle />
+                    </span>{" "}
+                    Login with Google
                   </button>
                 </div>
               </form>

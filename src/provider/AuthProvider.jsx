@@ -9,6 +9,8 @@ import {
 } from "firebase/auth";
 
 import { createContext, useEffect, useState } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { auth } from "../firebase/firebase.init";
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -23,15 +25,37 @@ const AuthProvider = ({ children }) => {
   const handleLogin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
+  const location = useLocation();
+  const navigate = useNavigate();
   const googleProvider = new GoogleAuthProvider();
   const handleLoginGoogle = () => {
     signInWithPopup(auth, googleProvider).then((result) => {
       setUser(result.user);
+      navigate(location.state.from);
+      toast.success("Login successful with Google!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     });
   };
   const logOut = () => {
-    return signOut(auth).then((result) => {
-      console.log(result);
+    return signOut(auth).then(() => {
+      toast("Logout successful!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
     });
   };
   const authInfo = {
@@ -56,6 +80,13 @@ const AuthProvider = ({ children }) => {
       unSubcribe();
     };
   }, []);
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-screen">
+        <span className="loading loading-spinner loading-lg"></span>
+      </div>
+    );
+  }
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

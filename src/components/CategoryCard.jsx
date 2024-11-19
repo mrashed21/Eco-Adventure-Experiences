@@ -19,7 +19,7 @@ const CategoryCard = ({ category }) => {
         <img
           src={image}
           alt={categoryName}
-          className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
+          className=" h-60 w-full md:h-auto object-cover transition-transform duration-300 hover:scale-105"
         />
         <div className="absolute inset-0 bg-black bg-opacity-65 opacity-0 hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
           <h2 className="text-white text-center px-3 text-xl font-semibold">

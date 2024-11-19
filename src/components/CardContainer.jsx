@@ -15,7 +15,7 @@ const CardContainer = () => {
   const displayedData = showAll ? filteredData : filteredData.slice(0, 9);
 
   return (
-    <div className="w-11/12 mx-auto my-20 px-20  ">
+    <div className="w-11/12 mx-auto my-20 md:px-20  ">
       <h1 className="text-center text-4xl font-bold mb-10">
         Eco-Adventure Experiences
       </h1>

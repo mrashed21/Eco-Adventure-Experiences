@@ -58,7 +58,7 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-              <NavLink
+              {/* <NavLink
                 to="/"
                 onClick={handleAllCategory}
                 className={({ isActive }) =>
@@ -66,7 +66,7 @@ const Navbar = () => {
                 }
               >
                 All Category
-              </NavLink>
+              </NavLink> */}
               <NavLink
                 to="/blog"
                 onClick={handleLinkClick}
@@ -103,7 +103,7 @@ const Navbar = () => {
             >
               Home
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/"
               onClick={handleAllCategory}
               className={({ isActive }) =>
@@ -111,7 +111,7 @@ const Navbar = () => {
               }
             >
               All Category
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/blog"
               className={({ isActive }) =>
@@ -140,7 +140,6 @@ const Navbar = () => {
               onClick={navigateProfile}
               className="text-xl md:text-3xl cursor-pointer"
             >
-              
               <FaRegUserCircle />
             </div>
           )}

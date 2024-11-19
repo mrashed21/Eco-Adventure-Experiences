@@ -1,19 +1,42 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 const Login = () => {
   const { handleLogin, handleLoginGoogle } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
-  
+
   const handleLoginForm = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-    handleLogin(email, password).then((result) => {
-      console.log(result);
-    });
-    
+    handleLogin(email, password)
+      .then(() => {
+        toast.success("Login successful!", {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      })
+      .catch(() => {
+        toast("Something went Wrong! Try agin.", {
+          position: "top-center",
+          autoClose: 2500,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "light",
+        });
+      });
   };
   return (
     <>
@@ -73,14 +96,20 @@ const Login = () => {
                     </Link>
                   </p>
                 </div>
+                
                 <div className="form-control mt-6">
-                  <button className="btn btn-primary">Login</button>
+                  <button className="btn btn-primary rounded-full">
+                    Login
+                  </button>
                 </div>
                 <div className="form-control mt-6">
                   <button
                     onClick={handleLoginGoogle}
-                    className="btn btn-primary"
+                    className="btn btn-outline  rounded-full"
                   >
+                    <span className="text-2xl">
+                      <FcGoogle />
+                    </span>{" "}
                     Login with Google
                   </button>
                 </div>
