@@ -14,7 +14,7 @@ const MyProfile = () => {
             {" "}
             {user.displayName
               ? `Welcome  ${user.displayName}`
-              : "User's Profile"}{" "}
+              : "Welcome to Profile"}{" "}
           </h2>
           <div className="w-40 h-40 rounded-full ">
             {user.photoURL ? (
@@ -31,7 +31,7 @@ const MyProfile = () => {
             )}
           </div>
           <h2 className="text-4xl font-bold my-3">
-            {user.displayName ? user.displayName : "User's Name"}
+            {user.displayName && user.displayName }
           </h2>
           <p className="text-xl font-medium">
             Email:
