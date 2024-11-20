@@ -1,19 +1,13 @@
 import { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import { FaRegUserCircle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
 const MyProfile = () => {
   const { user } = useContext(AuthContext);
-  console.log(user);
+
   return (
     <>
-      <Helmet>
-        <title>
-          {user.displayName ? `${user.displayName} Profile` : "Profile"}{" "}
-        </title>
-      </Helmet>
       <div className="bg-purple-100 py-10">
         <div className="mx-5 md:w-1/2 md:mx-auto bg-white py-8 rounded-xl shadow-lg flex flex-col items-center">
           <h2 className="text-3xl font-medium py-3">

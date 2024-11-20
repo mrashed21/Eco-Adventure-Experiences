@@ -69,7 +69,7 @@ Below are the types of eco-adventures included in the application:
 ### **Utilities**
 - [dotenv](https://www.npmjs.com/package/dotenv) - For managing environment variables.
 - [react-toastify](https://fkhadra.github.io/react-toastify/) - For toast notifications.
-- [react-helmet-async](https://www.npmjs.com/package/react-helmet-async) - For dynamic titles.
+- [useLocation] - For dynamic titles.
 
 
 ## Deployment

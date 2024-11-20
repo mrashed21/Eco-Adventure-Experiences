@@ -1,5 +1,4 @@
 import { useContext } from "react";
-import { Helmet } from "react-helmet-async";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 
@@ -16,9 +15,6 @@ const UpdateProfile = () => {
   };
   return (
     <>
-      <Helmet>
-        <title>Profile Update</title>
-      </Helmet>
       <div className=" bg-purple-100 py-5">
         <div className=" px-5 md:p-10 md:w-8/12 mx-auto">
           <h2 className="text-center text-3xl font-bold">

@@ -1,13 +1,8 @@
-import { Helmet } from "react-helmet-async";
 import BlogContainer from "../components/BlogContainer";
 
 const Blog = () => {
   return (
     <>
-      <Helmet>
-        <title>Blog</title>
-        <link rel="canonical" href="https://www.tacobell.com/" />
-      </Helmet>
       <div className="bg-purple-100 pt-10 pb-20">
         <div className="px-7 flex flex-col items-center">
           <h2 className="font-medium text-center text-xl md:text-4xl md:font-semibold mb-5">
