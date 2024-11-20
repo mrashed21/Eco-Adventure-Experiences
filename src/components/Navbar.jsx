@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FaRegUserCircle } from "react-icons/fa";
 import { IoMdClose, IoMdMenu } from "react-icons/io";
 import { NavLink, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { CategoryContext } from "../provider/AllDataContext";
 import { AuthContext } from "../provider/AuthProvider";
 const Navbar = () => {
@@ -9,7 +10,18 @@ const Navbar = () => {
   const { setSelectedCategory } = useContext(CategoryContext);
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
-
+  const welcomeProfile = () => {
+    toast.success(`Welcome  ${user.displayName && user.displayName}`, {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   const navigateLogin = () => {
     navigate("/login");
   };
@@ -77,6 +89,7 @@ const Navbar = () => {
                 Blog
               </NavLink>
               <NavLink
+                onClick={welcomeProfile}
                 to={"/aboutus"}
                 className={({ isActive }) =>
                   isActive ? "text-red-600 font-bold" : "text-white"
@@ -84,6 +97,17 @@ const Navbar = () => {
               >
                 About Us
               </NavLink>
+              {user && (
+                <NavLink
+                  to="/update/profile"
+                  onClick={handleLinkClick}
+                  className={({ isActive }) =>
+                    isActive ? "text-red-600 font-bold" : "text-white"
+                  }
+                >
+                  Update Profile
+                </NavLink>
+              )}
               {user && (
                 <NavLink
                   to="/profile"
@@ -137,7 +161,19 @@ const Navbar = () => {
               Blog
             </NavLink>
             {user && (
+                <NavLink
+                  to="/update/profile"
+                  onClick={handleLinkClick}
+                  className={({ isActive }) =>
+                    isActive ? "text-red-600 font-bold" : "text-white"
+                  }
+                >
+                 Update Profile
+                </NavLink>
+              )}
+            {user && (
               <NavLink
+                onClick={welcomeProfile}
                 to="/profile"
                 className={({ isActive }) =>
                   isActive ? "text-red-600 font-bold" : "text-white"
@@ -152,11 +188,19 @@ const Navbar = () => {
         <div className="navbar-end">
           {user && (
             <div
-              title={user.email}
+              title={user.displayName && user.displayName}
               onClick={navigateProfile}
-              className="text-xl md:text-3xl cursor-pointer"
+              className="text-xl md:text-3xl cursor-pointer w-10 h-10 rounded-full"
             >
-              <FaRegUserCircle />
+              {user && user.photoURL ? (
+                <img
+                  src={user.photoURL}
+                  alt=""
+                  className="w-full h-full rounded-full"
+                />
+              ) : (
+                <FaRegUserCircle />
+              )}{" "}
             </div>
           )}
           {user && user.email ? (

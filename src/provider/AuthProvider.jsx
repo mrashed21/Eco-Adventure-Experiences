@@ -9,7 +9,6 @@ import {
 } from "firebase/auth";
 
 import { createContext, useEffect, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { auth } from "../firebase/firebase.init";
 
@@ -25,24 +24,10 @@ const AuthProvider = ({ children }) => {
   const handleLogin = (email, password) => {
     return signInWithEmailAndPassword(auth, email, password);
   };
-  const location = useLocation();
-  const navigate = useNavigate();
+ 
   const googleProvider = new GoogleAuthProvider();
   const handleLoginGoogle = () => {
-    signInWithPopup(auth, googleProvider).then((result) => {
-      setUser(result.user);
-      navigate(location.state.from);
-      toast.success("Login successful with Google!", {
-        position: "top-center",
-        autoClose: 2500,
-        hideProgressBar: false,
-        closeOnClick: true,
-        pauseOnHover: true,
-        draggable: true,
-        progress: undefined,
-        theme: "light",
-      });
-    });
+    return signInWithPopup(auth, googleProvider);
   };
   const logOut = () => {
     return signOut(auth).then(() => {

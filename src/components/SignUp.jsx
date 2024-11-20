@@ -1,15 +1,47 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const SignUp = () => {
   const { handleSignUp, handleLoginGoogle, setUser } = useContext(AuthContext);
-
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  
+  const location = useLocation();
+  const redirectTo = location.state?.from?.pathname || "/";
+  const handleGoogleLogin = async () => {
+    try {
+      const result = await handleLoginGoogle();
+      setUser(result.user);
+      toast.success("SignUp successful with Google!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      navigate(redirectTo);
+    } catch {
+      toast.error("Something went wrong! Try again", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
+  };
 
   const validatePassword = (password) => {
     if (!/[a-z]/.test(password)) {
@@ -29,8 +61,8 @@ const SignUp = () => {
     }
     return "";
   };
-  // const location = useLocation();
-  const navigate = useNavigate();
+
+
   const handleSignForm = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -137,7 +169,7 @@ const SignUp = () => {
                 </div>
                 <div className="form-control mt-6">
                   <button
-                    onClick={handleLoginGoogle}
+                    onClick={handleGoogleLogin}
                     className="btn btn-outline rounded-full text-black"
                   >
                     <span className="text-2xl">

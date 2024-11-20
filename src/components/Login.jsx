@@ -1,17 +1,18 @@
 import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 const Login = () => {
-  const { handleLogin, handleLoginGoogle } = useContext(AuthContext);
+  const { handleLogin, handleLoginGoogle, setUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
-
+  const navigate = useNavigate();
   const handleLoginForm = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
+
     handleLogin(email, password)
       .then(() => {
         toast.success("Login successful!", {
@@ -24,6 +25,7 @@ const Login = () => {
           progress: undefined,
           theme: "light",
         });
+        navigate(redirectTo);
       })
       .catch(() => {
         toast("Something went Wrong! Try agin.", {
@@ -37,6 +39,36 @@ const Login = () => {
           theme: "light",
         });
       });
+  };
+  const location = useLocation();
+  const redirectTo = location.state?.from || "/";
+  const handleGoogleLogin = async () => {
+    try {
+      const result = await handleLoginGoogle();
+      setUser(result.user);
+      toast.success("Login successful with Google!", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+      navigate(redirectTo);
+    } catch {
+      toast.error("Something went wrong! Try again", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    }
   };
   return (
     <>
@@ -104,7 +136,7 @@ const Login = () => {
                 </div>
                 <div className="form-control mt-6">
                   <button
-                    onClick={handleLoginGoogle}
+                    onClick={handleGoogleLogin}
                     className="btn btn-outline  rounded-full"
                   >
                     <span className="text-2xl">

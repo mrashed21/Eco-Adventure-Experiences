@@ -32,7 +32,7 @@ const SingleCardDetails = () => {
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
 
-    if (currentHour >= 12 && currentHour < 20) {
+    if (currentHour >= 10 && currentHour < 20) {
       window.open("https://meet.google.com/ufk-xjsi-bxt", "_blank");
     } else {
       setShowModal(true);

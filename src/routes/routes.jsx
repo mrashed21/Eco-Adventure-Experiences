@@ -3,6 +3,7 @@ import CardContainer from "../components/CardContainer";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import SingleCardDetails from "../components/SingleCardDetails";
+import UpdateProfile from "../components/UpdateProfile";
 import Error from "../error/Error";
 import MainLayout from "../layouts/MainLayout";
 import Blog from "../pages/Blog";
@@ -11,6 +12,7 @@ import MyProfile from "../pages/MyProfile";
 import CategoryProvider from "../provider/AllDataContext";
 import AuthProvider from "../provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute";
+import AboutUs from "../pages/AboutUs";
 
 const routes = createBrowserRouter([
   {
@@ -55,9 +57,21 @@ const routes = createBrowserRouter([
         element: <SignUp />,
       },
       {
+        path: "/aboutus",
+        element: <AboutUs/>,
+      },
+      {
         path: "/blog",
         element: <Blog />,
         loader: () => fetch("/blog.json"),
+      },
+      {
+        path: "/update/profile",
+        element: (
+          <PrivateRoute>
+            <UpdateProfile />
+          </PrivateRoute>
+        ),
       },
       {
         path: "/profile",
