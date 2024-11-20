@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { useLoaderData, useParams } from "react-router-dom";
 const SingleCardDetails = () => {
   const { id } = useParams();
@@ -39,6 +40,10 @@ const SingleCardDetails = () => {
     }
   };
   return (
+    <>
+     <Helmet>
+        <title>Adventure Details</title>
+      </Helmet>
     <div
       data-aos="zoom-in"
       data-aos-easing="linear"
@@ -154,6 +159,7 @@ const SingleCardDetails = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -11,7 +12,6 @@ const SignUp = () => {
   const [error, setError] = useState("");
   const navigate = useNavigate();
 
-  
   const location = useLocation();
   const redirectTo = location.state?.from?.pathname || "/";
   const handleGoogleLogin = async () => {
@@ -62,7 +62,6 @@ const SignUp = () => {
     return "";
   };
 
-
   const handleSignForm = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -97,6 +96,10 @@ const SignUp = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Sign Up</title>
+        <link rel="canonical" href="https://www.tacobell.com/" />
+      </Helmet>
       <div className="bg-purple-100 py-10 ">
         <div className="px-5 md:px-0 md:w-6/12 mx-auto">
           <div className=" w-full flex-col">

@@ -1,4 +1,5 @@
 import { useContext, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useLocation, useNavigate } from "react-router-dom";
@@ -72,6 +73,9 @@ const Login = () => {
   };
   return (
     <>
+      <Helmet>
+        <title>Login</title>
+      </Helmet>
       <div className="bg-purple-100 py-10 ">
         <div className="px-5 md:w-6/12 mx-auto ">
           <div className="md:w-full flex-col">
