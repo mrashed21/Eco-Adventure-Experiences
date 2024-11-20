@@ -15,7 +15,7 @@ const MyProfile = () => {
         </title>
       </Helmet>
       <div className="bg-purple-100 py-10">
-        <div className="w-1/2 mx-auto bg-white py-8 rounded-xl shadow-lg flex flex-col items-center">
+        <div className="mx-5 md:w-1/2 md:mx-auto bg-white py-8 rounded-xl shadow-lg flex flex-col items-center">
           <h2 className="text-3xl font-medium py-3">
             {" "}
             {user.displayName

@@ -7,7 +7,8 @@ import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const SignUp = () => {
-  const { handleSignUp, handleLoginGoogle, setUser } = useContext(AuthContext);
+  const { handleSignUp, handleLoginGoogle, setUser, handleName } =
+    useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
   const navigate = useNavigate();
@@ -66,7 +67,8 @@ const SignUp = () => {
     e.preventDefault();
     const email = e.target.email.value;
     const password = e.target.password.value;
-
+    const name = e.target.name.value;
+    const image = e.target.profile.value;
     const passwordError = validatePassword(password);
     if (passwordError) {
       setError(passwordError);
@@ -75,17 +77,19 @@ const SignUp = () => {
 
     handleSignUp(email, password)
       .then((result) => {
-        setUser(result.user);
-        navigate("/");
-        toast.success("Signup successful!", {
-          position: "top-center",
-          autoClose: 2500,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
+        handleName(name, image).then(() => {
+          setUser(result.user);
+          navigate(redirectTo);
+          toast.success("Signup successful!", {
+            position: "top-center",
+            autoClose: 2500,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
         });
         setError("");
       })

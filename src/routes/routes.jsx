@@ -1,18 +1,19 @@
 import { createBrowserRouter } from "react-router-dom";
 import CardContainer from "../components/CardContainer";
+import ForgotPassword from "../components/ForgotPassword";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import SingleCardDetails from "../components/SingleCardDetails";
 import UpdateProfile from "../components/UpdateProfile";
 import Error from "../error/Error";
 import MainLayout from "../layouts/MainLayout";
+import AboutUs from "../pages/AboutUs";
 import Blog from "../pages/Blog";
 import Home from "../pages/Home";
 import MyProfile from "../pages/MyProfile";
 import CategoryProvider from "../provider/AllDataContext";
 import AuthProvider from "../provider/AuthProvider";
 import PrivateRoute from "./PrivateRoute";
-import AboutUs from "../pages/AboutUs";
 
 const routes = createBrowserRouter([
   {
@@ -58,7 +59,7 @@ const routes = createBrowserRouter([
       },
       {
         path: "/aboutus",
-        element: <AboutUs/>,
+        element: <AboutUs />,
       },
       {
         path: "/blog",
@@ -73,6 +74,7 @@ const routes = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      { path: "/reset/password", element: <ForgotPassword /> },
       {
         path: "/profile",
         element: (

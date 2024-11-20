@@ -8,6 +8,7 @@ import { AuthContext } from "../provider/AuthProvider";
 const Login = () => {
   const { handleLogin, handleLoginGoogle, setUser } = useContext(AuthContext);
   const [showPassword, setShowPassword] = useState(false);
+  const [rememberEmail, setRememberEmail] = useState();
   const navigate = useNavigate();
   const handleLoginForm = (e) => {
     e.preventDefault();
@@ -87,6 +88,8 @@ const Login = () => {
                   </label>
                   <input
                     type="email"
+                    value={rememberEmail}
+                    onChange={(e) => setRememberEmail(e.target.value)}
                     name="email"
                     placeholder="email"
                     className="input bg-[#F3F3F3] rounded-lg focus:outline-none"
@@ -117,7 +120,11 @@ const Login = () => {
 
                 <div className="flex flex-col md:flex-row gap-3 md:items-center justify-between">
                   <p>
-                    <Link href="#" className="label-text-alt link link-hover">
+                    <Link
+                      to={"/reset/password"}
+                      state={rememberEmail}
+                      className="label-text-alt link link-hover"
+                    >
                       Forgot password?
                     </Link>
                   </p>

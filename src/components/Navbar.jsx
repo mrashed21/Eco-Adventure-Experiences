@@ -185,12 +185,12 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-end">
+        <div className="navbar-end ">
           {user && (
             <div
               title={user.displayName && user.displayName}
               onClick={navigateProfile}
-              className="text-xl md:text-3xl cursor-pointer w-10 h-10 rounded-full"
+              className="text-xl flex items-center md:text-3xl cursor-pointer w-10 h-10 rounded-full"
             >
               {user && user.photoURL ? (
                 <img
