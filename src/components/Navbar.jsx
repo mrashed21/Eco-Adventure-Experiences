@@ -11,7 +11,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const welcomeProfile = () => {
-    toast.success(`Welcome  ${user.displayName && user.displayName}`, {
+    toast.success(`Welcome ${user.displayName ? user.displayName : ""}`, {
       position: "top-center",
       autoClose: 2500,
       hideProgressBar: false,
@@ -161,16 +161,16 @@ const Navbar = () => {
               Blog
             </NavLink>
             {user && (
-                <NavLink
-                  to="/update/profile"
-                  onClick={handleLinkClick}
-                  className={({ isActive }) =>
-                    isActive ? "text-red-600 font-bold" : "text-white"
-                  }
-                >
-                 Update Profile
-                </NavLink>
-              )}
+              <NavLink
+                to="/update/profile"
+                onClick={handleLinkClick}
+                className={({ isActive }) =>
+                  isActive ? "text-red-600 font-bold" : "text-white"
+                }
+              >
+                Update Profile
+              </NavLink>
+            )}
             {user && (
               <NavLink
                 onClick={welcomeProfile}

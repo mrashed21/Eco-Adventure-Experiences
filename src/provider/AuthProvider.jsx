@@ -40,7 +40,7 @@ const AuthProvider = ({ children }) => {
   };
   const logOut = () => {
     return signOut(auth).then(() => {
-      toast("Logout successful!", {
+      toast.success("Logout successful!", {
         position: "top-center",
         autoClose: 2500,
         hideProgressBar: false,

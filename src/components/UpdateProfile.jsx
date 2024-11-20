@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import { AuthContext } from "../provider/AuthProvider";
 
 const UpdateProfile = () => {
@@ -9,9 +10,33 @@ const UpdateProfile = () => {
     e.preventDefault();
     const name = e.target.name.value;
     const image = e.target.profile.value;
-    handleName(name, image).then(() => {
-      navigate("/");
-    });
+    if (!name) {
+      return toast.error("Enter your name", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else if (!image) {
+      return toast.error("Input Image URL", {
+        position: "top-center",
+        autoClose: 2500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      });
+    } else {
+      handleName(name, image).then(() => {
+        navigate("/");
+      });
+    }
   };
   return (
     <>

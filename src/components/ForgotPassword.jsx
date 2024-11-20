@@ -26,7 +26,7 @@ const ForgotPassword = () => {
         window.open("https://mail.google.com", "_blank");
       }, 3000);
     } catch {
-      toast("Something went Wrong! Try agin.", {
+      toast.error("Something went Wrong! Try agin.", {
         position: "top-center",
         autoClose: 2500,
         hideProgressBar: false,
