@@ -12,17 +12,18 @@ const Blogs = ({ blog }) => {
   }, []);
   return (
     <div>
+      
       <div
         data-aos="zoom-in-down"
         data-aos-easing="linear"
         data-aos-duration="1000"
-        className="card rounded-xl flex-row w-full bg-base-100 shadow-xl p-4"
+        className="card rounded-xl md:flex-row w-full bg-base-100 shadow-xl p-4"
       >
         <figure
-          data-aos="fade-right"
+          data-aos="fade-down"
           data-aos-easing="linear"
           data-aos-duration="1000"
-          className="w-1/2"
+          className="md:w-1/2"
         >
           <img
             src={image}
@@ -31,10 +32,10 @@ const Blogs = ({ blog }) => {
           />
         </figure>
         <div
-          data-aos="fade-left"
+          data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1000"
-          className="card-body w-1/2"
+          className="card-body px-5 md:w-1/2"
         >
           <h2 className="card-title text-xl font-bold text-blue-500">
             {title}
@@ -42,7 +43,7 @@ const Blogs = ({ blog }) => {
           <p className="text-sm text-gray-500">
             By <span className="font-semibold">{author}</span> on {date}
           </p>
-          <p className="text-gray-700 mt-2">{content}</p>
+          <p className="text-gray-700 text-justify mt-2">{content}</p>
           <div className="mt-3 flex flex-wrap gap-2">
             {tags.map((tag, index) => (
               <span

@@ -3,6 +3,7 @@ import CardContainer from "../components/CardContainer";
 import Login from "../components/Login";
 import SignUp from "../components/SignUp";
 import SingleCardDetails from "../components/SingleCardDetails";
+import Error from "../error/Error";
 import MainLayout from "../layouts/MainLayout";
 import Blog from "../pages/Blog";
 import Home from "../pages/Home";
@@ -21,11 +22,13 @@ const routes = createBrowserRouter([
         </CategoryProvider>
       </AuthProvider>
     ),
+    errorElement: <Error />,
     children: [
       {
         path: "/",
         element: <Home />,
         loader: () => fetch("/categoyCard.json"),
+
         children: [
           {
             path: "/",

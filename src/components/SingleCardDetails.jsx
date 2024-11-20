@@ -32,7 +32,7 @@ const SingleCardDetails = () => {
     const currentTime = new Date();
     const currentHour = currentTime.getHours();
 
-    if (currentHour >= 10 && currentHour < 20) {
+    if (currentHour >= 12 && currentHour < 20) {
       window.open("https://meet.google.com/ufk-xjsi-bxt", "_blank");
     } else {
       setShowModal(true);
@@ -40,22 +40,24 @@ const SingleCardDetails = () => {
   };
   return (
     <div
-      data-aos="zoom-out-right"
+      data-aos="zoom-in"
       data-aos-easing="linear"
       data-aos-duration="1000"
       className="py-10 bg-gray-100 min-h-screen"
     >
-      <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-6">
+      <div className="w-11/12 mx-auto bg-white rounded-lg shadow-lg p-6">
         <div className="flex flex-col lg:flex-row items-start lg:items-center gap-6">
-          <div className="w-1/2">
+          <div className="md:w-1/2">
             <img
               src={image}
               alt={adventureTitle}
               className="w-full rounded-lg object-cover"
             />
           </div>
-          <div className="w-1/2">
-            <h1 className="text-3xl font-bold mb-4">{adventureTitle}</h1>
+          <div className="md:w-1/2">
+            <h1 className=" text-2xl font-semibold md:text-3xl md:font-bold mb-4">
+              {adventureTitle}
+            </h1>
             <p className="text-gray-600 mb-2">{shortDescription}</p>
             <div className="text-lg font-medium">
               Cost:{" "}
@@ -75,43 +77,44 @@ const SingleCardDetails = () => {
           </div>
         </div>
 
-        <div className="mt-6">
-          <h2 className="text-2xl font-semibold mb-4">Details</h2>
+        <div className=" mt-2 md:mt-6">
+          <h2 className="text-2xl font-semibold mb-1 md:mb-4">Details</h2>
           <ul className="list-disc ml-5 text-gray-700 space-y-2">
             <li>
               {" "}
-              <span className="text-lg font-medium">Location:</span> {location}
+              <span className="md:text-lg font-medium">Location:</span>{" "}
+              {location}
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium"> Duration: </span>{" "}
+              <span className="md:text-lg font-medium"> Duration: </span>{" "}
               {duration}
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium"> Adventure Level: </span>
+              <span className="md:text-lg font-medium"> Adventure Level: </span>
               {adventureLevel}
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium"> Max Group Size: </span>
+              <span className="md:text-lg font-medium"> Max Group Size: </span>
               {maxGroupSize} <span>People</span>
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium">
+              <span className="md:text-lg font-medium">
                 Eco-Friendly Features:{" "}
               </span>{" "}
               {ecoFriendlyFeatures.join(", ")}
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium"> Included: </span>
+              <span className="md:text-lg font-medium"> Included: </span>
               {includedItems.join(", ")}
             </li>
             <li>
               {" "}
-              <span className="text-lg font-medium">
+              <span className="md:text-lg font-medium">
                 {" "}
                 Special Instructions:{" "}
               </span>{" "}
@@ -120,7 +123,7 @@ const SingleCardDetails = () => {
           </ul>
         </div>
 
-        <div className="mt-8 People px-20 justify-center">
+        <div className="mt-8 People md:px-20 justify-center">
           <button
             className="btn btn-success w-full rounded-full text-white text-lg"
             onClick={handleTalkWithExpert}
@@ -132,7 +135,7 @@ const SingleCardDetails = () => {
 
       {/* Modal */}
       {showModal && (
-        <div className="modal modal-open">
+        <div className="modal modal-middle modal-open">
           <div className="modal-box text-center">
             <h3 className="font-bold text-lg">Consultation Time</h3>
             <p className="py-4">

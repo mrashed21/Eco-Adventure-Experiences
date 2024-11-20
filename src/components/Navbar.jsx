@@ -76,6 +76,14 @@ const Navbar = () => {
               >
                 Blog
               </NavLink>
+              <NavLink
+                to={"/aboutus"}
+                className={({ isActive }) =>
+                  isActive ? "text-red-600 font-bold" : "text-white"
+                }
+              >
+                About Us
+              </NavLink>
               {user && (
                 <NavLink
                   to="/profile"
@@ -112,6 +120,14 @@ const Navbar = () => {
             >
               All Category
             </NavLink> */}
+            <NavLink
+              to={"/aboutus"}
+              className={({ isActive }) =>
+                isActive ? "text-red-600 font-bold" : "text-white"
+              }
+            >
+              About Us
+            </NavLink>
             <NavLink
               to="/blog"
               className={({ isActive }) =>

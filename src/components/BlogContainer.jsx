@@ -5,7 +5,7 @@ const BlogContainer = () => {
   const blogData = useLoaderData();
   console.log(blogData);
   return (
-    <div className="w-10/12 mx-auto space-y-8 ">
+    <div className=" px-5 md:px-0 md:w-10/12 mx-auto space-y-8 ">
       {blogData.map((blog) => (
         <Blogs key={blog.id} blog={blog} > </Blogs>      ))}
     </div>

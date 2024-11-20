@@ -66,8 +66,8 @@ const SignUp = () => {
   return (
     <>
       <div className="bg-purple-100 py-10 ">
-        <div className="hero w-6/12 mx-auto min-h-screen">
-          <div className="hero-content w-full flex-col">
+        <div className="px-5 md:px-0 md:w-6/12 mx-auto">
+          <div className=" w-full flex-col">
             <div className="card bg-base-100 w-full shrink-0 shadow-md">
               <form onSubmit={handleSignForm} className="card-body">
                 <div className="form-control">
@@ -143,7 +143,7 @@ const SignUp = () => {
                     <span className="text-2xl">
                       <FcGoogle />
                     </span>{" "}
-                    Login with Google
+                    Sign Up with Google
                   </button>
                 </div>
               </form>

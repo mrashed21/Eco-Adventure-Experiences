@@ -21,7 +21,7 @@ const JoinWithUs = () => {
           </p>
 
           <div
-            data-aos="fade-left"
+            data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1000"
             className="bg-white text-gray-800 p-6 rounded-lg shadow-lg"

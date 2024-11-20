@@ -27,7 +27,7 @@ const CardDetails = ({ singleCard }) => {
         className="card md:flex-row rounded-lg bg-base-100 shadow-xl p-4"
       >
         <figure
-           data-aos="fade-right"
+           data-aos="fade-down"
            data-aos-easing="linear"
            data-aos-duration="1000"
           className=" md:w-1/2"
@@ -39,7 +39,7 @@ const CardDetails = ({ singleCard }) => {
           />
         </figure>
         <div
-       data-aos="fade-left"
+       data-aos="fade-up"
        data-aos-easing="linear"
        data-aos-duration="1000"
           className="p-4 flex flex-col flex-grow  md:w-1/2"
