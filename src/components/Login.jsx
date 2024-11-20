@@ -141,18 +141,18 @@ const Login = () => {
                     Login
                   </button>
                 </div>
-                <div className="form-control mt-6">
-                  <button
-                    onClick={handleGoogleLogin}
-                    className="btn btn-outline  rounded-full"
-                  >
-                    <span className="text-2xl">
-                      <FcGoogle />
-                    </span>{" "}
-                    Login with Google
-                  </button>
-                </div>
               </form>
+              <div className="form-control px-8 mb-8">
+                <button
+                  onClick={handleGoogleLogin}
+                  className="btn btn-outline  rounded-full"
+                >
+                  <span className="text-2xl">
+                    <FcGoogle />
+                  </span>{" "}
+                  Login with Google
+                </button>
+              </div>
             </div>
           </div>
         </div>
