@@ -11,8 +11,8 @@ const MainLayout = () => {
   const { id } = useParams();
   useEffect(() => {
     const searchParams = new URLSearchParams(location.search);
-  const categoryName = searchParams.get("category");
-   
+    const categoryName = searchParams.get("category");
+
     if (location.pathname === "/login") {
       document.title = "Login";
     } else if (location.pathname === "/signup") {
@@ -29,8 +29,7 @@ const MainLayout = () => {
       document.title = user?.displayName
         ? `${user?.displayName} Profile`
         : "User Profile";
-    }
-    else if (location.pathname === "/" && categoryName) {
+    } else if (location.pathname === "/" && categoryName) {
       document.title = `Category - ${categoryName}`;
     } else {
       document.title = "Eco-Adventure Experiences";
