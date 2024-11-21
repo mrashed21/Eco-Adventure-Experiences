@@ -11,7 +11,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const welcomeProfile = () => {
-    toast.success(`Welcome ${user.displayName ? user.displayName : ""}`, {
+    toast.success(`Welcome ${user?.displayName ? user?.displayName : ""}`, {
       position: "top-center",
       autoClose: 2500,
       hideProgressBar: false,
@@ -188,13 +188,13 @@ const Navbar = () => {
         <div className="navbar-end ">
           {user && (
             <div
-              title={user.displayName && user.displayName}
+              title={user?.displayName && user?.displayName}
               onClick={navigateProfile}
               className="text-xl flex items-center md:text-3xl cursor-pointer w-10 h-10 rounded-full"
             >
-              {user && user.photoURL ? (
+              {user && user?.photoURL ? (
                 <img
-                  src={user.photoURL}
+                  src={user?.photoURL}
                   alt=""
                   className="w-full h-full rounded-full"
                 />
@@ -203,7 +203,7 @@ const Navbar = () => {
               )}{" "}
             </div>
           )}
-          {user && user.email ? (
+          {user && user?.email ? (
             <button
               onClick={logOut}
               className="ml-2 btn btn-sm rounded-md md:btn-neutral md:rounded-none"

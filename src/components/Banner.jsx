@@ -44,25 +44,25 @@ const Banner = () => {
       modules={[Autoplay, Pagination]}
       className="mySwiper"
     >
-      {slides.map((slide, index) => (
+      {slides?.map((slide, index) => (
         <SwiperSlide key={index} className="relative">
           <div className="h-[450px]">
             <img
-              src={slide.image}
-              alt={slide.title}
+              src={slide?.image}
+              alt={slide?.title}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-center items-center text-white">
-            <h2 className="text-3xl font-bold mb-2">{slide.title}</h2>
+            <h2 className="text-3xl font-bold mb-2">{slide?.title}</h2>
             <p className="text-lg mx-4 md:mx-20 text-center mb-4">
-              {slide.description}
+              {slide?.description}
             </p>
             <a
-              href={slide.buttonLink}
+              href={slide?.buttonLink}
               className="px-10 btn btn-primary text-white font-semibold rounded-full text-lg"
             >
-              {slide.buttonText}
+              {slide?.buttonText}
             </a>
           </div>
         </SwiperSlide>

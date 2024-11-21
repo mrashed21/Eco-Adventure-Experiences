@@ -26,8 +26,8 @@ const MainLayout = () => {
     } else if (location.pathname === "/update/profile") {
       document.title = "Update Profile";
     } else if (location.pathname === "/profile") {
-      document.title = user.displayName
-        ? `${user.displayName} Profile`
+      document.title = user?.displayName
+        ? `${user?.displayName} Profile`
         : "User Profile";
     }
     else if (location.pathname === "/" && categoryName) {

@@ -34,7 +34,7 @@ const UpdateProfile = () => {
       });
     } else {
       handleName(name, image).then(() => {
-        navigate("/");
+        navigate("/profile");
       });
     }
   };

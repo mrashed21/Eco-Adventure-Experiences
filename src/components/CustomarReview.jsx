@@ -80,20 +80,20 @@ const CustomarReview = () => {
             >
               <div className="flex items-center mb-4">
                 <img
-                  src={review.image}
-                  alt={review.name}
+                  src={review?.image}
+                  alt={review?.name}
                   className="w-16 h-16 rounded-full mr-4 object-cover"
                 />
                 <div>
-                  <h3 className="text-lg font-semibold">{review.name}</h3>
-                  <p className="text-sm text-gray-500">{review.date}</p>
+                  <h3 className="text-lg font-semibold">{review?.name}</h3>
+                  <p className="text-sm text-gray-500">{review?.date}</p>
                 </div>
               </div>
-              <p className="text-gray-700 mb-4">{review.review}</p>
+              <p className="text-gray-700 mb-4">{review?.review}</p>
               <div>
                 <ReactStars
                   count={5}
-                  value={review.rating}
+                  value={review?.rating}
                   size={24}
                   edit={false}
                   activeColor="#ffd700"

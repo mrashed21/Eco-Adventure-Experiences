@@ -1,13 +1,21 @@
 import { useContext, useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import { CategoryContext } from "../provider/AllDataContext";
+import { AuthContext } from "../provider/AuthProvider";
 import CardDetails from "./CardDetails";
 
 const CardContainer = () => {
   const data = useLoaderData();
   const { selectedCategory } = useContext(CategoryContext);
+  const { setLoading } = useContext(AuthContext);
   const [showAll, setShowAll] = useState(false);
-
+  const handleSeeMore = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setShowAll(true);
+      setLoading(false);
+    }, 3000);
+  };
   const filteredData = selectedCategory
     ? data.filter((card) => card.categoryName === selectedCategory)
     : data;
@@ -25,10 +33,10 @@ const CardContainer = () => {
         ))}
       </div>
 
-      {!showAll && filteredData.length > 9 && (
+      {!showAll && filteredData?.length > 9 && (
         <div className="mt-6 text-center px-10">
           <button
-            onClick={() => setShowAll(true)}
+            onClick={() => handleSeeMore()}
             className="w-full btn btn-primary text-white font-semibold rounded-full text-lg"
           >
             See More
