@@ -48,7 +48,7 @@ const Navbar = () => {
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <div
-                className="text-3xl font-bold md:hidden"
+                className="text-3xl font-bold lg:hidden"
                 onClick={() => setOpen(!open)}
               >
                 {open ? <IoMdClose /> : <IoMdMenu />}
@@ -89,7 +89,6 @@ const Navbar = () => {
                 Blog
               </NavLink>
               <NavLink
-                onClick={welcomeProfile}
                 to={"/aboutus"}
                 className={({ isActive }) =>
                   isActive ? "text-red-600 font-bold" : "text-white"
