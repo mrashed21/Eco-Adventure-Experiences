@@ -131,35 +131,34 @@ const SingleCardDetails = () => {
 
           <div className="mt-8 People md:px-20 justify-center">
             <button
-              className="btn btn-success w-full rounded-full text-white text-lg"
+              className="btn btn-primary w-full rounded-full text-white text-lg"
               onClick={handleTalkWithExpert}
             >
               Talk with Expert
             </button>
           </div>
         </div>
-
-        {/* Modal */}
-        {showModal && (
-          <div className="modal modal-middle modal-open">
-            <div className="modal-box text-center">
-              <h3 className="font-bold text-lg">Consultation Time</h3>
-              <p className="py-4">
-                Experts are available between <b>10:00 AM</b> and <b>8:00 PM</b>
-                . Please visit during these hours.
-              </p>
-              <div className="px-10">
-                <button
-                  className="btn btn-primary rounded-full w-full"
-                  onClick={() => setShowModal(false)}
-                >
-                  Close
-                </button>
-              </div>
+      </div>
+      {/* Modal */}
+      {showModal && (
+        <div className="modal modal-middle modal-open">
+          <div className="modal-box text-center">
+            <h3 className="font-bold text-lg">Consultation Time</h3>
+            <p className="py-4">
+              Experts are available between <b>10:00 AM</b> and <b>8:00 PM</b>.
+              Please visit during these hours.
+            </p>
+            <div className="px-10">
+              <button
+                className="btn btn-primary rounded-full w-full"
+                onClick={() => setShowModal(false)}
+              >
+                Close
+              </button>
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </>
   );
 };
